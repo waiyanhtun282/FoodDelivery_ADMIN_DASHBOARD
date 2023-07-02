@@ -59,8 +59,7 @@ const Header = () => {
                 </NavLink>
               ))}
               <Button
-                variant="outlined"
-                className=" rounded-full border-white text-white hover:bg-blue-400 hover:border-blue-800 focus:shadow-none"
+                className=" rounded-full border-white text-white focus:shadow-none"
                 onClick={() => navigate("/contact-us")}
               >
                 Contact Us
