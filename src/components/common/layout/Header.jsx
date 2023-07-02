@@ -18,7 +18,7 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <div className=" bg-tint_blue text-white">
-      <div className=" container mx-auto h-[60px] md:h-[70px] lg:h-[80px] flex justify-between items-center">
+      <div className=" container mx-auto h-[70px] md:h-[80px] flex justify-between items-center">
         <div className=" h6">ASIA ICE</div>
         {/* for desktop  */}
         <nav className=" hidden lg:block">
@@ -30,7 +30,7 @@ const Header = () => {
             ))}
             <Button
               variant="outlined"
-              className=" rounded-full border-white text-white hover:bg-blue-800 hover:border-blue-800 focus:shadow-none"
+              className=" rounded-full border-white text-white hover:bg-blue-400 hover:border-blue-800 focus:shadow-none"
               onClick={() => navigate("/contact-us")}
             >
               Contact Us
@@ -60,7 +60,7 @@ const Header = () => {
               ))}
               <Button
                 variant="outlined"
-                className=" rounded-full border-white text-white hover:bg-blue-800 hover:border-blue-800 focus:shadow-none"
+                className=" rounded-full border-white text-white hover:bg-blue-400 hover:border-blue-800 focus:shadow-none"
                 onClick={() => navigate("/contact-us")}
               >
                 Contact Us
