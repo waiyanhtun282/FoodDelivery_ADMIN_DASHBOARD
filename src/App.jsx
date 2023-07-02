@@ -6,7 +6,7 @@ const App = () => {
   const location = useLocation();
   const preLocationRef = useRef(location);
   useEffect(() => {
-    if (preLocationRef.current !== location) {
+    if (preLocationRef.current !== location && window.innerWidth < 991) {
       window.location.reload();
     }
     preLocationRef.current = location;
