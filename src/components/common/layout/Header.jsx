@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import Images from "../../../assets/images/index";
 import { RiCloseLine } from "react-icons/ri";
 import { BiMenu } from "react-icons/bi";
+import { useModalContext } from "../../../hooks/useModalContext";
 
 const navLists = [
   { id: 1, name: "Home", link: "/" },
@@ -14,8 +15,12 @@ const navLists = [
 ];
 
 const Header = () => {
-  const [isShow, setIsShow] = useState(false);
+  const { isShowNav, setIsShowNav } = useModalContext();
   const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/contact-us");
+    setIsShowNav(false);
+  };
   return (
     <div className=" bg-tint_blue text-white">
       <div className=" container mx-auto h-[70px] md:h-[80px] flex justify-between items-center">
@@ -39,12 +44,12 @@ const Header = () => {
         </nav>
         {/* for menu icon  */}
         <button className=" lg:hidden">
-          <BiMenu className=" text-[25px]" onClick={() => setIsShow(true)} />
+          <BiMenu className=" text-[25px]" onClick={() => setIsShowNav(true)} />
         </button>
         {/* for mobile and tablet  */}
         <div
           className={` h-screen w-full lg:hidden fixed top-0 bottom-0 transition-all dura ${
-            isShow ? "left-0" : "left-[-100%]"
+            isShowNav ? "left-0" : "left-[-100%]"
           }`}
         >
           <div
@@ -54,20 +59,25 @@ const Header = () => {
           <nav className=" absolute top-0 w-full h-screen bg-[#171753de]">
             <ul className=" flex flex-col justify-center items-center gap-[48px] h-[100%] relative">
               {navLists.map((n, id) => (
-                <NavLink to={n.link} className=" text-gray-300" key={id}>
+                <NavLink
+                  to={n.link}
+                  className=" text-gray-300"
+                  key={id}
+                  onClick={() => setIsShowNav(false)}
+                >
                   {n.name}
                 </NavLink>
               ))}
               <Button
                 className=" rounded-full border-white text-white focus:shadow-none"
-                onClick={() => navigate("/contact-us")}
+                onClick={handleClick}
               >
                 Contact Us
               </Button>
               <button className=" absolute top-5 right-5 md:top-10 md:right-10">
                 <RiCloseLine
                   className={"text-[25px] md:text-[30px]"}
-                  onClick={() => setIsShow(false)}
+                  onClick={() => setIsShowNav(false)}
                 />
               </button>
             </ul>
