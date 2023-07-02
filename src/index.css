@@ -1,0 +1,58 @@
+/* for fonts  */
+@font-face {
+  font-family: poppins_normal;
+  src: url('./assets/fonts/poppins_regular.ttf');
+}
+
+@font-face {
+  font-family: poppins_semiBold;
+  src: url('./assets/fonts/poppins_semibold.ttf');
+}
+
+@font-face {
+  font-family: poppins_bold;
+  src: url('./assets/fonts/poppins_bold.ttf');
+}
+
+/* for tailwind css  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* line-height: 1.2em; */
+  font-family: poppins_normal;
+}
+
+/* for typography  */
+.h1{
+  @apply text-[40px] leading-[130%] md:text-[54px] font-semibold md:leading-[74px];
+}
+
+.h2{
+  @apply text-[32px] leading-[140%] md:text-[48px] font-semibold md:leading-[64px];
+}
+
+.h3{
+  @apply text-[24px] leading-[150%] md:text-[38px] font-semibold md:leading-[56px];
+}
+
+.h4{
+  @apply text-[20px] leading-[150%] md:text-[36px] font-medium md:leading-[56px];
+}
+
+.h5{
+  @apply text-[16px] leading-[150%] md:text-[32px] font-medium md:leading-[48px];
+}
+
+.h6{
+  @apply text-[18px] leading-[150%] md:text-[24px] font-medium md:leading-[36px];
+}
+
+.para{
+  @apply leading-[150%] font-normal md:leading-[28px];
+}
