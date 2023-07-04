@@ -26,7 +26,7 @@ const Footer = () => {
               <BsLinkedin className=" text-[20px]" />
             </div>
           </div>
-          <div className="">
+          <div className=" md:col-span-2 lg:col-span-1">
             <div className="grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-2 bg-c_yellow py-[20px] px-[30px] text-black">
               <div className="">
                 <p className=" font-psemibold">Email me at</p>
