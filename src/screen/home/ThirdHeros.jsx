@@ -28,7 +28,7 @@ const ThirdHeros = () => {
                   alt=" pj-1 images"
                   className="w-[100%] h-[100%]"
                 />
-                <div className=" sm:w-[396px] h-[100%] w-[455px] bg-tint_blue opacity-0  hover:opacity-[0.7] transition-all duration-300 absolute top-0 left-0 ">
+                <div className=" sm:w-[396px] h-[100%] w-[356px] bg-tint_blue opacity-0  hover:opacity-[0.7] transition-all duration-300 absolute top-0 left-0 ">
                   <div className=" absolute bottom-[20%] left-[10%] ">
                     <div className="space-y-4">
                       <h3 className=" text-white sm:text-[24px] text-[20px] max-w-sm sm:max-w-0 font-[600]">
@@ -54,7 +54,7 @@ const ThirdHeros = () => {
                     alt=" Pj-2 images"
                     className=" w-[100%] h-[100%]"
                   />
-                  <div className=" sm:w-[414px] w-[452px] h-[284px] bg-tint_blue  absolute top-0 left-0 opacity-0  hover:opacity-[0.7] transition-all duration-300">
+                  <div className=" sm:w-[414px] w-[356px] h-[284px] bg-tint_blue  absolute top-0 left-0 opacity-0  hover:opacity-[0.7] transition-all duration-300">
                     <div className=" absolute bottom-[20%] left-[10%] ">
                       <div className="space-y-4 w-[313px] h-[72px]">
                         <h3 className=" text-white text-[24px] font-[600]">

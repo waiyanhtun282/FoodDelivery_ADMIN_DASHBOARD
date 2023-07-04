@@ -40,7 +40,7 @@ const SecondHero = () => {
     <div className="  container mx-auto">
 
     <div className="  flex sm:flex-row flex-col  justify-between  items-center sm:items-start  space-y-8 sm:space-y-0">
-         <div className=" w-[405px] text-center sm:text-left space-y-3   ">
+         <div className=" sm:w-[405px] text-center sm:text-left space-y-3   ">
            <h2 className=" h2">How we work</h2>
            <p className="text-gray-600 para">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

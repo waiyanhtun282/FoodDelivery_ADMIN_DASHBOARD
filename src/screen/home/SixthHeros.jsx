@@ -25,7 +25,7 @@ const SixthHeros = () => {
           <div className=""></div>
         </div>
 
-        <div className=" sm:w-[624px] bg-tint_blue flex flex-col items-center justify-center py-5 sm:py-0">
+        <div className=" sm:w-[624px] w-[336px] bg-tint_blue flex flex-col items-center justify-center py-5 sm:py-0 px-3 sm:px-0">
           <div className=" sm:w-[432px] space-y-3">
             <h5 className=" h5 text-white sm:text-left  text-center">Send inquiry</h5>
             <p className="para text-gray-500 sm:text-left text-center">
@@ -34,7 +34,7 @@ const SixthHeros = () => {
             </p>
           </div>
           <div className="">
-            <form action="" className=" sm:w-[432px] w-[370px] h-[224px] mt-5 ">
+            <form action="" className=" sm:w-[432px] w-[325px] h-[224px] mt-5 ">
               {/* <input type="text" className=" w-[100%] bg-transparent "/> */}
               <div className="my-2 ">
                 
@@ -68,7 +68,7 @@ const SixthHeros = () => {
                 />
               </div>
               
-              <button className=" bg-c_yellow w-[100%] sm:p-3 text-[18px] p-2 rounded-full my-5">Send an Inquiry</button>
+              <button className=" bg-c_yellow w-[100%] sm:p-3 sm:text-[18px] p-2 rounded-full my-5">Send an Inquiry</button>
               <div className=" text-c_accent sm:flex gap-3 justify-center hidden ">
                 <span>Get in touch with us</span>
                  <LiaLongArrowAltRightSolid size={25}/>

@@ -51,7 +51,7 @@ const FifthHalf = () => {
               >
                 <h3 className=" text-c_blue sm:text-[24px] text-[18px]">{arr?.number} </h3>
 
-                <h4 className=" sm:text-[24px] text-dark_blue">
+                <h4 className=" sm:text-[24px] text-[13px] text-dark_blue">
                     {arr?.name}
                 </h4>
                 <AiOutlinePlus size={17}  className=" cursor-pointer"/>
