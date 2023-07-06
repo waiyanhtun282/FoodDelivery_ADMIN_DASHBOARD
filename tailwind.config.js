@@ -30,6 +30,7 @@ module.exports = withMT({
       c_yellow: "#FCD980",
       c_gray: "#F4F6FC",
       c_accent: "#EEF4FA",
+      c_green:"#97DAAD"
     },
   },
   plugins: [],
