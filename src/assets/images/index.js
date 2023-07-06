@@ -12,6 +12,12 @@ import Inquiry from './inquiry.png';
 import Client1 from './client_1.png';
 import Client2 from './client_2.png';
 import Client3 from './client_3.png';
+import clientMan1 from './clientman1.png';
+import clientMan2 from './clientman2.png';
+import clientMan3 from './clientman3.png';
+import clientMan4 from './clientman4.png';
+
+
 
 
 
@@ -30,5 +36,9 @@ export default {
   Inquiry,
   Client1,
   Client2,
-  Client3
+  Client3,
+  clientMan1,
+  clientMan2,
+  clientMan3,
+  clientMan4,
 };

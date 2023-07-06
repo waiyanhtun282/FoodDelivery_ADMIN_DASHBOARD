@@ -49,7 +49,7 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Card */}
-        <div className="  flex gap-6 sm:flex-row flex-col border-2">
+        <div className="  flex gap-6 sm:flex-row flex-col ">
           {
             priceArr?.map((price) => <PricingCard key={price?.id} price={price}/>)
           }
