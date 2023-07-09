@@ -32,10 +32,13 @@ const SecondHero = () => {
   // const arr = Array(4).fill();
 
   return (
-    <div className=" sm:h-[661px]  flex   items-center  bg-c_gray py-5 sm:py-0">
+    <div className=" lg:h-[661px]  flex   items-center  bg-c_gray py-5 md:py-3 lg:py-0">
       <div className="  container mx-auto">
-        <div className="  flex sm:flex-row flex-col  justify-between  items-center sm:items-start  space-y-8 sm:space-y-0">
-          <div className=" sm:w-[405px] text-center sm:text-left space-y-3   ">
+        <div className="  flex lg:flex-row flex-col  justify-between  items-center lg:items-start  space-y-8 lg:space-y-0">
+          <div
+            className=" sm:w-[405px] text-center sm:text-left space-y-3 "
+            data-aos="zoom-in"
+          >
             <h2 className=" h2">How we work</h2>
             <p className="text-gray-600 para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +53,7 @@ const SecondHero = () => {
             <div className="grid grid-cols-2    sm:gap-16 gap-8">
               {SecondArr?.map((arr) => {
                 return (
-                  <div className=" space-y-3 " key={arr?.id}>
+                  <div className=" space-y-3 " key={arr?.id} data-aos="zoom-in">
                     <img
                       src={arr?.image}
                       alt=" home work p1"

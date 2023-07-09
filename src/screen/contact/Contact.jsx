@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <div className="container mx-auto my-[60px] lg:my-[128px]">
-        <div className="">
+        <div className="" data-aos="zoom-in">
           <h3 className=" h3 text-center">Contact Us</h3>
           <p className="text-center mt-[16px] text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
@@ -15,7 +15,7 @@ const Contact = () => {
             eiusmod tempor incididunt ut labore.
           </p>
         </div>
-        <div className=" max-w-[1060px] mt-[40px] md:mt-[60px] mx-auto">
+        <div className=" max-w-[1060px] mt-[40px] md:mt-[60px] mx-auto" data-aos="zoom-in">
           <div className="p-[20px] md:p-[50px] bg-c_gray">
             <form action="">
               <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-[30px]">

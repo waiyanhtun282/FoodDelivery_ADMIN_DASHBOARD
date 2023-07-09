@@ -15,12 +15,12 @@ const FeatureSecond = () => {
     <div className=" flex items-center py-[40px] lg:py-[20px]">
       <div className=" container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-[20px] gap-y-[30px] md:gap-[30px] lg:gap-0 mt-[48px]">
-          <div className="">
+          <div className="" data-aos="zoom-in">
             <h4 className=" h4 font-psemibold">100.000+</h4>
             <p>Finsweet Users</p>
           </div>
           {brands.map((brand, id) => (
-            <div className=" h-full flex items-center" key={id}>
+            <div className=" h-full flex items-center" key={id} data-aos="zoom-in">
               <img src={brand.icon} alt="" className=" w-[120px] md:w-auto" />
             </div>
           ))}

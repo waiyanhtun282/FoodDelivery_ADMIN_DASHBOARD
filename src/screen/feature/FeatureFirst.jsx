@@ -4,11 +4,11 @@ import { Button } from "@material-tailwind/react";
 
 const FeatureFirst = () => {
   return (
-    <div className=" bg-tint_blue flex  items-center py-[70px]">
+    <div className=" bg-tint_blue flex  items-center py-[80px] md:py-[128px] animate__animated animate__fadeIn">
       <div className="container mx-auto ">
-        <div className=" flex flex-col-reverse lg:flex-row gap-[50px]">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]">
           {/* left heroFirst */}
-          <div className="">
+          <div className=" order-2 lg:order-first">
             <h1 className=" h1 text-white">
               All the features you need
             </h1>

@@ -36,12 +36,15 @@ const FeatureEight = () => {
     <div className="">
       <div className=" container mx-auto py-[50px] md:py-[100px] lg:py-[128px]">
         <div className=" flex flex-col lg:flex-row">
-          <div className=" lg:w-5/12 text-center sm:text-left">
+          <div
+            className=" lg:w-5/12 text-center sm:text-left"
+            data-aos="zoom-in"
+          >
             <h3 className=" h3 ">Frequently asked questions</h3>
             <p className=" text-c_blue mt-[10px]">Contact us for more info</p>
           </div>
 
-          <div className=" lg:w-7/12 mt-[30px] lg:mt-0">
+          <div className=" lg:w-7/12 mt-[30px] lg:mt-0" data-aos="zoom-in">
             {array?.map((arr) => {
               return (
                 <div

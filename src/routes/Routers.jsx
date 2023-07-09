@@ -13,6 +13,7 @@ import Template from "../screen/home/Template/Template";
 import TemplateDetail from "../screen/home/Template/detail/TemplateDetail";
 import Details from  "../screen/blog/Detail";
 import PrivacyPolicy from "../screen/PrivacyPolicy/PrivacyPolicy";
+import Detail from "../screen/blog/Detail";
 
 const Routers = () => {
   return useRoutes([
@@ -24,6 +25,7 @@ const Routers = () => {
         </Layout>
       ),
     },
+    
     {
       path:paths.template,
       element:(
@@ -78,7 +80,7 @@ const Routers = () => {
       path: paths.blogDetail,
       element: (
         <Layout>
-          <Details />
+          <Detail />
         </Layout>
       ),
     },

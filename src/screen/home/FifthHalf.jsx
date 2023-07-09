@@ -33,32 +33,32 @@ const FifthHalf = () => {
   //   const arr = Array(5).fill("");
 
   return (
-    <div className="sm:h-[537px] flex items-center  py-5 sm:py-0">
+    <div className="lg:h-[537px] flex items-center  py-5 md:py-3 lg:py-0">
       <div className=" container mx-auto ">
-        <div className=" flex sm:flex-row flex-col sm:justify-between  sm:gap-36 gap-16">
-          <div className=" sm:space-y-3  space-y-2 text-center sm:text-left">
-            <h3 className=" h3 sm:w-[328px]">Frequently asked questions</h3>
+        <div className="flex flex-col lg:flex-row">
+          <div className=" lg:w-5/12" data-aos="zoom-in">
+            <h3 className=" h3">Frequently asked questions</h3>
             <p className=" text-c_blue">Contact us for more info</p>
           </div>
 
-          <div className=" sm:w-[844px] ">
+          <div className=" lg:w-7/12" data-aos="zoom-in">
             {array?.map((arr) => {
               return (
-                <div
-                  className="  flex  justify-between items-center sm:text-left border-y-[1px] border-y-gray-100  h-16"
-                  key={arr?.id}
-                >
-                  <div className=" flex gap-10">
-                    <h3 className="sm:text-left text-center text-c_blue sm:text-[24px] text-[18px]">
-                      {arr?.number}{" "}
-                    </h3>
+                <React.Fragment key={arr.id}>
+                  <div className="  flex  justify-between items-center  lg:text-left  border-y-[1px] border-y-gray-100  h-16">
+                    <div className=" flex gap-10">
+                      <h3 className="lg:text-left text-center text-c_blue lg:text-[24px] text-[18px]">
+                        {arr?.number}{" "}
+                      </h3>
 
-                    <h4 className=" sm:text-[24px] text-[13px] text-dark_blue">
-                      {arr?.name}
-                    </h4>
+                      <h4 className=" lg:text-[24px] text-[13px] text-dark_blue">
+                        {arr?.name}
+                      </h4>
+                    </div>
+                    <AiOutlinePlus size={17} className=" cursor-pointer" />
                   </div>
-                  <AiOutlinePlus size={17} className=" cursor-pointer" />
-                </div>
+                  {/* <br className=" bg-green-600 h-6 " /> */}
+                </React.Fragment>
               );
             })}
           </div>

@@ -22,8 +22,8 @@ const Header = () => {
     setIsShowNav(false);
   };
   return (
-    <div className=" bg-tint_blue text-white">
-      <div className=" container mx-auto h-[70px] md:h-[80px] flex justify-between items-center">
+    <div className=" bg-tint_blue text-white z-50">
+      <div className=" container mx-auto h-[70px] md:h-[90px] flex justify-between items-center">
         <div className=" h6">ASIA ICE</div>
         {/* for desktop  */}
         <nav className=" hidden lg:block">
@@ -48,7 +48,7 @@ const Header = () => {
         </button>
         {/* for mobile and tablet  */}
         <div
-          className={` h-screen w-full lg:hidden fixed top-0 bottom-0 transition-all dura ${
+          className={` h-screen w-full lg:hidden fixed top-0 bottom-0 transition-all duration-200 z-50 ${
             isShowNav ? "left-0" : "left-[-100%]"
           }`}
         >
