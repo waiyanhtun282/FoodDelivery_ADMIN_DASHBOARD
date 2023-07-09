@@ -9,6 +9,10 @@ import Pricing from "../screen/pricing/Pricing";
 import Blog from "../screen/blog/Blog";
 import Contact from "../screen/contact/Contact";
 import NotFound from "../screen/notFound/NotFound";
+import Template from "../screen/home/Template/Template";
+import TemplateDetail from "../screen/home/Template/detail/TemplateDetail";
+import Details from  "../screen/blog/Detail";
+import PrivacyPolicy from "../screen/PrivacyPolicy/PrivacyPolicy";
 
 const Routers = () => {
   return useRoutes([
@@ -19,6 +23,24 @@ const Routers = () => {
           <Home />
         </Layout>
       ),
+    },
+    {
+      path:paths.template,
+      element:(
+        <Layout>
+          <Template />
+        </Layout>
+      )
+
+    },
+    {
+      path:paths.templateDetail,
+      element:(
+        <Layout>
+          <TemplateDetail />
+        </Layout>
+      )
+
     },
     {
       path: paths.about,
@@ -53,10 +75,26 @@ const Routers = () => {
       ),
     },
     {
+      path: paths.blogDetail,
+      element: (
+        <Layout>
+          <Details />
+        </Layout>
+      ),
+    },
+    {
       path: paths.contact,
       element: (
         <Layout>
           <Contact />
+        </Layout>
+      ),
+    },
+    {
+      path: paths.privacyPolicy,
+      element: (
+        <Layout>
+          <PrivacyPolicy />
         </Layout>
       ),
     },

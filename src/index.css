@@ -28,6 +28,12 @@
   font-family: poppins_normal;
 }
 
+:root {
+    --speed: 0.5s;
+    --distance: 1.3rem;
+    --distance-negative: -1.3rem;
+}
+
 /* for typography  */
 .h1{
   @apply text-[40px] leading-[130%] md:text-[54px] font-semibold md:leading-[74px];
@@ -56,3 +62,9 @@
 .para{
   @apply leading-[150%] font-normal md:leading-[28px];
 }
+.inquirty{
+  background-color: rgba(0, 0, 0, 0.5);
+  @apply absolute top-0 left-0 w-[100%] h-[100%]
+}
+
+

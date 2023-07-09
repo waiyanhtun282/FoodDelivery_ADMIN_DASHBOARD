@@ -4,6 +4,9 @@ import brand2 from "./plogo_2.svg";
 import brand3 from "./plogo_3.svg";
 import brand4 from "./plogo_4.svg";
 import brand5 from "./plogo_5.svg";
+import featureImage from './FeatureHero.svg';
+import logoNumber  from './LogoNumber.png';
+import logoWrapper from './LogoWrapper.png';
 
 export default {
   homeBanner,
@@ -12,4 +15,8 @@ export default {
   brand3,
   brand4,
   brand5,
+  homeBanner,
+  featureImage,
+  logoNumber,
+  logoWrapper,
 };
