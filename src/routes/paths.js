@@ -1,5 +1,6 @@
 export const paths = {
   home: "/",
+  homeDetail:'/:id',
   about: "/about-us",
   features: "/features",
   pricing: "/pricing",
@@ -7,6 +8,6 @@ export const paths = {
   blogDetail: "/blog/:id",
   contact: "/contact-us",
   template:'/template',
-  templateDetail:'/template/:id',
+  templateDetail:'/template/detail',
   not_found: "*",
 };

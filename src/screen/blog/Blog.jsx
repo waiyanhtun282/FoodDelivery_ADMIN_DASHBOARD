@@ -8,7 +8,7 @@ import { useModalContext } from "../../hooks/useModalContext";
 
 const Blog = () => {
 const {blogArr}  = useModalContext();
-// console.log(blogArr)
+console.log(blogArr)
   return (
     <>
       {/* blog one */}

@@ -4,10 +4,10 @@ import {LiaLongArrowAltRightSolid} from "react-icons/lia";
 
 const SixthHeros = () => {
   return (
-    <div className=" sm:h-[691px] flex items-center my-5 sm:my-0">
+    <div className=" lg:h-[691px] flex items-center my-5 lg:my-0">
     <div className="container mx-auto">
       <div className=" flex">
-        <div className=" relative w-[624px] h-[100%] hidden sm:block">
+        <div className=" relative w-[624px] h-[100%] hidden lg:block">
           <img src={Images?.Inquiry} alt=" injuirty" />
           <div className=" inquirty"></div>
           {/*  */}
@@ -25,16 +25,16 @@ const SixthHeros = () => {
           <div className=""></div>
         </div>
 
-        <div className=" sm:w-[624px] w-[336px] bg-tint_blue flex flex-col items-center justify-center py-5 sm:py-0 px-3 sm:px-0">
-          <div className=" sm:w-[432px] space-y-3">
-            <h5 className=" h5 text-white sm:text-left  text-center">Send inquiry</h5>
-            <p className="para text-gray-500 sm:text-left text-center">
+        <div className=" lg:w-[624px]  bg-tint_blue flex flex-col items-center justify-center py-5 lg:py-0 px-3 lg:px-0">
+          <div className=" lg:w-[432px] space-y-3">
+            <h5 className=" h5 text-white lg:text-left  text-center">Send inquiry</h5>
+            <p className="para text-gray-500 lg:text-left text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               do eiusmod tempor incididunt ut labore.
             </p>
           </div>
           <div className="">
-            <form action="" className=" sm:w-[432px] w-[325px] h-[224px] mt-5 ">
+            <form action="" className=" lg:w-[432px] w-[325px] h-[224px] mt-5 ">
               {/* <input type="text" className=" w-[100%] bg-transparent "/> */}
               <div className="my-2 ">
                 
@@ -68,8 +68,8 @@ const SixthHeros = () => {
                 />
               </div>
               
-              <button className=" bg-c_yellow w-[100%] sm:p-3 sm:text-[18px] p-2 rounded-full my-5">Send an Inquiry</button>
-              <div className=" text-c_accent sm:flex gap-3 justify-center hidden ">
+              <button className=" bg-c_yellow w-[100%] lg:p-3 lg:text-[18px] p-2 rounded-full my-5">Send an Inquiry</button>
+              <div className=" text-c_accent lg:flex gap-3 justify-center hidden ">
                 <span>Get in touch with us</span>
                  <LiaLongArrowAltRightSolid size={25}/>
               </div>

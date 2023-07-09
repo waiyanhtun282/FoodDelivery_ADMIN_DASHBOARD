@@ -5,8 +5,9 @@ import TemplateImg from "../../../../assets/images/index";
 const DetailTempOne = ({template}) => {
   return (
     <>
-      <div className=" sm:h-[1329px] flex items-center py-8 sm:py-0" key={template?.id}>
+      <div className=" sm:h-[1329px] flex items-center py-8 sm:py-0">
       <div className="container mx-auto">
+      
         <div className=" sm:space-y-8 space-y-5">
         {/* blog header */}
         <div className=" sm:w-[646px] sm:h-[176px] text-center sm:text-left" >

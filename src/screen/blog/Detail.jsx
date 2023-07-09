@@ -1,17 +1,26 @@
 import React from "react";
 import BlogImg from "../../assets/images/index";
 import Lists from "../home/Template/detail/Lists";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useModalContext } from "../../hooks/useModalContext";
+import {HiArrowNarrowLeft} from 'react-icons/hi';
 
 const Detail = () => {
+  const navigate = useNavigate();
   const {id} =useParams();
-  console.log(id)
+  // console.log(id)
 const {blogArr}  = useModalContext();
 const blogDetail = blogArr?.find((blog) => blog?.id === parseInt(id));
 
 
   return (
+    <>
+     <Link onClick={() =>navigate(-1)}>
+     <p className="  cursor-pointer  container flex items-center gap-3 sm:py-5 py-3">
+        <HiArrowNarrowLeft size={20}/>
+        <span className=" text-[18px]">Back</span>
+        </p>
+     </Link>
     <div className=" sm:h-[2600px] flex items-center ">
       <div className="container mx-auto">
         <div className="  flex flex-col justify-center  items-center py-10 sm:py-0">
@@ -132,6 +141,7 @@ const blogDetail = blogArr?.find((blog) => blog?.id === parseInt(id));
         </div>
       </div>
     </div>
+    </>
   );
 };
 

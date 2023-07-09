@@ -4,10 +4,10 @@ import Icons from "../../assets/icons/index";
 
 const Hero = () => {
   return (
-    <div className=" bg-tint_blue sm:h-[760px] h-[350px] flex items-center">
+    <div className=" bg-tint_blue lg:h-[760px] md:h-[500px] h-[350px] flex items-center">
       <div className=" container mx-auto">
-        <div className="flex sm:justify-between justify-center items-center sm:gap-16">
-          <div className=" sm:w-[582px] height-[222px] sm:space-y-8 space-y-3 max-w-sm sm:text-left  text-center">
+        <div className="flex lg:justify-between  justify-center  items-center lg:gap-16">
+          <div className=" lg:w-[582px] height-[222px] lg:space-y-8 md:space-y-5 space-y-3 max-w-sm lg:text-left  text-center">
             <h1 className=" sm:h1 h2   text-white ">
               Building stellar websites for early startups
             </h1>
@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hidden lg:flex">
-            <img src={Icons.homeBanner} alt="" />
+            <img src={Icons.homeBanner} alt="HeaderHero" className="w-[100%] h-[100%]" />
           </div>
         </div>
       </div>

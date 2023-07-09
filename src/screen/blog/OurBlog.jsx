@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 
 const OurBlog = ({blogArr}) => {
-  console.log({blogArr})
+  // console.log({blogArr})
   // const arr = Array(6).fill("");
 
   return (
-    <>
-    <div className=" sm:h-[1362px] flex items-center">
+  
+    <div className=" sm:h-[1362px] flex items-center" key={blogArr.id}>
         <div className="container mx-auto">
           <div className=" space-y-5">
             <h1 className=" h1 text-center text-dark_blue">Our Blog</h1>
@@ -19,7 +19,7 @@ const OurBlog = ({blogArr}) => {
             <div className=" sm:grid sm:grid-cols-3 gap-8">
               {blogArr?.map((blog) => {
                 return (
-                  <>
+               
                     <div className=" sm:w-[370px] sm:h-[593px]  border-red-500 " key={blog?.id}  >
                       <img
                         src={blog?.image}
@@ -46,7 +46,7 @@ const OurBlog = ({blogArr}) => {
                        </Link>
                       </div>
                     </div>
-                  </>
+                 
                 );
               })}
             </div>
@@ -54,7 +54,7 @@ const OurBlog = ({blogArr}) => {
         </div>
       </div>
       
-    </>
+   
   )
 }
 
