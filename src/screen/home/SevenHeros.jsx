@@ -30,8 +30,7 @@ const SevenHeros = () => {
          <div className="sm:grid sm:grid-cols-3  sm:gap-10 flex flex-col  items-center">
          {sevenArr?.map((arr) => {
             return (
-              < >
-                <div className="sm:w-[350px] sm:h-[609px] h-[600px]  " key={arr?.id} >
+              <div className="sm:w-[350px] sm:h-[609px] h-[600px]  " key={arr?.id} >
                   <img
                     src={arr?.image}
                     alt="Client1"
@@ -55,7 +54,6 @@ const SevenHeros = () => {
                     </div>
                   </div>
                 </div>
-              </>
             );
           })}
          </div>

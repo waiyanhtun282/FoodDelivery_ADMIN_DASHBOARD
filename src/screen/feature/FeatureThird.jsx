@@ -1,64 +1,51 @@
-import React from 'react';
-import { SlNote } from 'react-icons/sl';
-import { FaPencilRuler } from 'react-icons/fa';
-import {HiOutlineUserGroup } from 'react-icons/hi';
+import React from "react";
+import { GiNotebook } from "react-icons/gi";
+import { RiPencilRuler2Line } from "react-icons/ri";
+import { HiUserGroup } from "react-icons/hi";
 
-const featureArr =[
-    {
-      id:10,
-      icons:<SlNote size={30}/>,
-      title:" Perfectly Responsive",
-  
-    },
-    
-    {
-      id:20,
-      icons:<FaPencilRuler size={30}/>,
-      title:" Customize with ease",
-  
-    },
-    {
-      id:30,
-      icons:<HiOutlineUserGroup size={30}/>,
-      title:" Friendly Support",
-  
-    }
-  ];
+const benefits = [
+  {
+    id: 1,
+    icon: <GiNotebook className=" text-[30px] text-c_blue" />,
+    title: "Customize with ease",
+  },
+  {
+    id: 1,
+    icon: <RiPencilRuler2Line className=" text-[30px] text-c_blue" />,
+    title: "Perfectly Responsive",
+  },
+  {
+    id: 1,
+    icon: <HiUserGroup className=" text-[30px] text-c_blue" />,
+    title: "Friendly Support",
+  },
+];
 
 const FeatureThird = () => {
   return (
     <>
-       <div className=" sm:h-[600px] flex items-center  my-10 sm:my-0  ">
-        <div className="container mx-auto">
-          <div className=" text-center flex justify-center sm:py-5">
-            <h2 className="w-[630px] h-[128px] sm:h2 h3">
-              The benefits of working with our team
-            </h2>
-          </div>
-          {/* for card feature */}
-          <div className="  grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-8 gap-4 ">
-          {featureArr?.map((arr) => {
-            return (
-              <div className=" sm:w-[370px]  sm:h-[316px] h-[250px] bg-c_gray  flex justify-center items-center rounded-md  shadow-sm" key={arr?.id} >
-                <div className=" space-y-3 ">
-                  <div className=" text-c_blue">
-                    {arr?.icons}
-                  </div>
-                  <h6 className=" text-dark_blue text-[24px]">{arr?.title}</h6>
-                  <p className=" text-gray-700 para w-[324px] h-[112px]">
-                    Euismod faucibus turpis eu gravida mi. Pellentesque et
-                    velit aliquam sed faucib turpis eu gravida mi.
-                    Pellentesque et velit aliquam sed mi.
-                  </p>
-                </div>
+      <div className="container mx-auto md:pt-[60px]">
+        <div className="mt-[30px]">
+          <h2 className=" h3 text-center">
+            The benefits of working <br /> with us
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] mt-[30px] md:mt-[40px]">
+            {benefits.map((be, id) => (
+              <div className=" bg-c_gray p-[40px]" key={id}>
+                <div className="">{be.icon}</div>
+                <h6 className="h6 font-psemibold my-[20px]">{be.title}</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  ut enim.
+                </p>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
-        </div>
-      </div> 
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default FeatureThird
+export default FeatureThird;
