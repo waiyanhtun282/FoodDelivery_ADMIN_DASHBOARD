@@ -36,7 +36,7 @@ const PriceSecond = () => {
     <div className="sm:h-[562px] flex items-center  py-5 sm:py-0">
       <div className=" container mx-auto ">
         <div className=" flex sm:flex-row flex-col sm:justify-between  sm:gap-36 gap-16">
-          <div className=" sm:space-y-3  space-y-2 text-center">
+          <div className=" sm:space-y-3  space-y-2 text-center sm:text-left">
             <h3 className=" h3 sm:w-[328px]">Frequently asked questions</h3>
             <p className=" text-c_blue">Contact us for more info</p>
           </div>

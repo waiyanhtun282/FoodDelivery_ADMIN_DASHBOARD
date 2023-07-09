@@ -9,6 +9,9 @@ import Pricing from "../screen/pricing/Pricing";
 import Blog from "../screen/blog/Blog";
 import Contact from "../screen/contact/Contact";
 import NotFound from "../screen/notFound/NotFound";
+import Template from "../screen/home/Template/Template";
+import TemplateDetail from "../screen/home/Template/detail/TemplateDetail";
+import Details from  "../screen/blog/Detail";
 
 const Routers = () => {
   return useRoutes([
@@ -19,6 +22,24 @@ const Routers = () => {
           <Home />
         </Layout>
       ),
+    },
+    {
+      path:paths.template,
+      element:(
+        <Layout>
+          <Template />
+        </Layout>
+      )
+
+    },
+    {
+      path:paths.templateDetail,
+      element:(
+        <Layout>
+          <TemplateDetail />
+        </Layout>
+      )
+
     },
     {
       path: paths.about,
@@ -49,6 +70,14 @@ const Routers = () => {
       element: (
         <Layout>
           <Blog />
+        </Layout>
+      ),
+    },
+    {
+      path: paths.blogDetail,
+      element: (
+        <Layout>
+          <Details />
         </Layout>
       ),
     },

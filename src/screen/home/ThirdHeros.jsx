@@ -1,6 +1,8 @@
 import React from 'react';
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import Images from "../../assets/images/index";
+import { Link } from 'react-router-dom';
+import { paths } from '../../routes/paths';
 
 const ThirdHeros = () => {
   return (
@@ -38,10 +40,12 @@ const ThirdHeros = () => {
                         Euismod faucibus turpis eu gravida mi. Pellentesque et
                         velit aliquam
                       </p>
-                      <div className=" text-c_yellow flex items-center gap-3 ">
+                    <Link to={paths?.template}>
+                    <div className=" text-c_yellow flex items-center gap-3 ">
                         <span>View project</span>
                         <LiaLongArrowAltRightSolid size={25} />
                       </div>
+                    </Link>
                     </div>
                   </div>
                 </div>
@@ -61,10 +65,12 @@ const ThirdHeros = () => {
                           Unisaas Website Design
                         </h3>
                         
-                        <div className=" text-c_yellow flex items-center gap-3 ">
+                       <Link to={paths?.template}>
+                       <div className=" text-c_yellow flex items-center gap-3 ">
                           <span>View project</span>
                           <LiaLongArrowAltRightSolid size={25} />
                         </div>
+                       </Link>
                       </div>
                     </div>
                   </div>

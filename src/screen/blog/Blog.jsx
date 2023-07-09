@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
+import BlogHero from "./BlogHero";
+import OurBlog from "./OurBlog";
+
+import { useModalContext } from "../../hooks/useModalContext";
+
+
 
 const Blog = () => {
+const {blogArr}  = useModalContext();
+// console.log(blogArr)
   return (
-    <div>Blog</div>
-  )
-}
+    <>
+      {/* blog one */}
+      <BlogHero />
 
-export default Blog
+      {/* ourBlogw two */}
+      <OurBlog blogArr={blogArr}/>
+      
+    </>
+  );
+};
+
+export default Blog;

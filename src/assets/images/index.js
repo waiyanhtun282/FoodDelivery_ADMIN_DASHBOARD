@@ -16,6 +16,27 @@ import clientMan1 from './clientman1.png';
 import clientMan2 from './clientman2.png';
 import clientMan3 from './clientman3.png';
 import clientMan4 from './clientman4.png';
+import blogHeader from './blogHeader.png';
+import blog1 from './blog1.png';
+import blog2 from './blog2.png';
+import blog3 from './blog3.png';
+import blog4 from './blog4.png';
+import blog5 from './blog5.png';
+import blog6 from './blog6.png';
+import template1 from './template1.png';
+import template2 from './template2.png';
+import template3 from './template3.png';
+import template4 from './template4.png';
+import template5 from './template5.png';
+import template6 from './template6.png';
+import cover from './Cover.png';
+
+
+
+
+
+
+
 
 
 
@@ -41,4 +62,21 @@ export default {
   clientMan2,
   clientMan3,
   clientMan4,
+  blogHeader,
+  blog1,
+  blog2,
+  blog3,
+  blog4,
+  blog5,
+  blog6,
+  template1,
+  template2,
+  template3,
+  template4,
+  template5,
+  template6,
+  cover
+
+
+
 };
