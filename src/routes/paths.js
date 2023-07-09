@@ -6,7 +6,8 @@ export const paths = {
   blog: "/blog",
   blogDetail: "/blog/:id",
   contact: "/contact-us",
-  template:'/template',
-  templateDetail:'/template/:id',
+  template: "/template",
+  templateDetail: "/template/:id",
+  privacyPolicy: "/privacy-policy",
   not_found: "*",
 };

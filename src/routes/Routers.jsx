@@ -12,6 +12,7 @@ import NotFound from "../screen/notFound/NotFound";
 import Template from "../screen/home/Template/Template";
 import TemplateDetail from "../screen/home/Template/detail/TemplateDetail";
 import Details from  "../screen/blog/Detail";
+import PrivacyPolicy from "../screen/PrivacyPolicy/PrivacyPolicy";
 
 const Routers = () => {
   return useRoutes([
@@ -86,6 +87,14 @@ const Routers = () => {
       element: (
         <Layout>
           <Contact />
+        </Layout>
+      ),
+    },
+    {
+      path: paths.privacyPolicy,
+      element: (
+        <Layout>
+          <PrivacyPolicy />
         </Layout>
       ),
     },
