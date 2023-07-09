@@ -8,11 +8,11 @@ const TemplateTwo = ({ templateArr }) => {
 
   return (
     <>
-      <div className=" sm:h-[1942px] flex items-center">
+      <div className=" lg:h-[1942px] flex items-center ">
         <div className="container mx-auto">
           <div className=" space-y-4">
             {/* categories */}
-            <div className="hidden sm:block sm:w-[473px] sm:h-[32px] mx-auto">
+            <div className="hidden py-0 lg:py-0  md:py-5 md:block md:w-[473px] md:h-[32px] mx-auto">
               <ul className=" flex  justify-between">
                 <li>ALl</li>
                 <li>UI Design</li>
@@ -22,16 +22,16 @@ const TemplateTwo = ({ templateArr }) => {
             </div>
 
             {/* Template */}
-            <div className=" sm:grid sm:grid-cols-2 sm:gap-5 space-y-6 sm:space-y-0">
+            <div className=" md:grid md:grid-cols-2 md:gap-5 space-y-6 md:space-y-0">
               {templateArr?.map((temp) => {
                 return (
-                  <div className=" sm:w-[550px] sm:h-[576px] " key={temp?.id}>
+                  <div className=" lg:w-[550px] lg:h-[576px] " key={temp?.id}>
                     <img
                       src={temp?.template}
                       alt="temp 1"
-                      className=" w-[100%] sm:h-[380px] mb-3 object-contain"
+                      className=" w-[100%] lg:h-[380px] mb-3 object-contain"
                     />
-                    <div className=" h-[172px] space-y-5">
+                    <div className="md:h-auto h-[172px] space-y-5">
                       <h3 className=" h3">Template 1</h3>
                       <p className="para text-gray-600">
                         Apparently we had reached a great height in the

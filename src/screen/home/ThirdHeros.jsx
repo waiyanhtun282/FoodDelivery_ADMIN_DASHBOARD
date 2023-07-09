@@ -52,7 +52,7 @@ const ThirdHeros = () => {
                 </div>
               </div>
               {/* imag2 and 3 */}
-              <div className="md:grid  md:grid-cols-2 md:gap-3">
+              <div className="md:grid  md:grid-cols-2 lg:grid-cols-1 md:gap-3">
                 <div className="lg:w-[414px] h-[284px] relative ">
                   <img
                     src={Images.PJ2}

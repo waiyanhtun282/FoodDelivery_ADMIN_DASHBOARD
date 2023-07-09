@@ -95,13 +95,13 @@ const TemplateDetail = () => {
       <div className=" flex justify-center ">
       <div className=" sm:h-[1420px]  flex items-center ">
           <div className="container mx-auto">
-            <div className=" sm:w-[840px] sm:space-y-8 space-y-5">
+            <div className=" lg:w-[840px] md:space-y-8 space-y-5">
               {/* heading */}
               <div className=" space-y-2 ">
-                <h2 className=" sm:h2 h3 text-center sm:text-left">
+                <h2 className=" md:h2 h3 text-center md:text-left">
                   About the project
                 </h2>
-                <p className="para text-gray-600 sm:w-[835px] sm:h-[140px] text-justify sm:text-left">
+                <p className="para text-gray-600 lg:w-[835px] lg:h-[140px] text-justify md:text-left">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -116,7 +116,7 @@ const TemplateDetail = () => {
               <Lists />
 
               {/* image */}
-              <div className=" sm:w-[840px] sm:h-[508px]">
+              <div className=" lg:w-[840px] lg:h-[508px]">
                 <img
                   src={detail?.template}
                   alt=" tempeatail"
@@ -126,8 +126,8 @@ const TemplateDetail = () => {
 
               {/* how we do it */}
               <div className=" space-y-2">
-                <h2 className=" sm:h2 h3">How we do it</h2>
-                <p className="para text-gray-600 sm:w-[835px] sm:h-[140px] text-justify sm:text-left">
+                <h2 className=" md:h2 h3">How we do it</h2>
+                <p className="para text-gray-600 lg:w-[835px] lg:h-[140px] text-justify md:text-left">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
