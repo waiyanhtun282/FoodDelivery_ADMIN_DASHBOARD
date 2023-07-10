@@ -33,11 +33,11 @@ const FifthHalf = () => {
   //   const arr = Array(5).fill("");
 
   return (
-    <div className="lg:h-[537px] flex items-center  py-5 md:py-3 lg:py-0">
+    <div className=" flex items-center py-[50px]  md:py-[120px]">
       <div className=" container mx-auto ">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row gap-[30px] lg:gap-0">
           <div className=" lg:w-5/12" data-aos="zoom-in">
-            <h3 className=" h3">Frequently asked questions</h3>
+            <h3 className=" h3 mb-3">Frequently asked questions</h3>
             <p className=" text-c_blue">Contact us for more info</p>
           </div>
 

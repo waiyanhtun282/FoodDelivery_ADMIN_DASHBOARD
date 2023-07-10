@@ -101,7 +101,7 @@ const TemplateDetail = () => {
               {/* heading */}
               <div className=" space-y-2 ">
                 <h2
-                  className=" md:h2 h3 text-center md:text-left"
+                  className=" md:h2 h3 text-center md:text-left mb-5"
                   data-aos="zoom-in"
                 >
                   About the project
@@ -133,8 +133,8 @@ const TemplateDetail = () => {
               </div>
 
               {/* how we do it */}
-              <div className=" space-y-2" data-aos="zoom-in">
-                <h2 className=" md:h2 h3">How we do it</h2>
+              <div className=" pt-5" data-aos="zoom-in">
+                <h2 className=" md:h2 h3 mb-3">How we do it</h2>
                 <p className="para text-gray-600 lg:w-[835px] lg:h-[140px] text-justify md:text-left">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -154,7 +154,7 @@ const TemplateDetail = () => {
 
       {/* keywords */}
 
-      <div className="container mx-auto hidden sm:block" data-aos="zoom-in">
+      <div className="container mx-auto hidden sm:block py-[50px]" data-aos="zoom-in">
         <div className="     border-y-[.9px] border-y-gray-400  ">
           <div className="  py-5 ">
             <ul className=" flex  justify-between  items-center">

@@ -3,7 +3,7 @@ import React from "react";
 const TemplateThree = () => {
   return (
     <>
-      <div className="sm:h-[400px]  flex items-center my-8 sm:my-0">
+      <div className=" flex items-center py-[70px] md:py-[100px]">
         <div className="container mx-auto">
           <div
             className=" flex justify-center  items-center "

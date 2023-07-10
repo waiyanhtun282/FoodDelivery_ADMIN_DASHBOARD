@@ -32,11 +32,11 @@ const SecondHero = () => {
   // const arr = Array(4).fill();
 
   return (
-    <div className=" lg:h-[661px]  flex   items-center  bg-c_gray py-5 md:py-3 lg:py-0">
+    <div className="flex   items-center  bg-c_gray py-[60px] md:py-[120px]">
       <div className="  container mx-auto">
         <div className="  flex lg:flex-row flex-col  justify-between  items-center lg:items-start  space-y-8 lg:space-y-0">
           <div
-            className=" sm:w-[405px] text-center sm:text-left space-y-3 "
+            className="text-center sm:text-left space-y-3 mb-8"
             data-aos="zoom-in"
           >
             <h2 className=" h2">How we work</h2>
@@ -49,8 +49,8 @@ const SecondHero = () => {
               <LiaLongArrowAltRightSolid className=" " />
             </div>
           </div>
-          <div className="sm:w-[656px]  ">
-            <div className="grid grid-cols-2    sm:gap-16 gap-8">
+          <div className="">
+            <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-16 gap-8">
               {SecondArr?.map((arr) => {
                 return (
                   <div className=" space-y-3 " key={arr?.id} data-aos="zoom-in">

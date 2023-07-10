@@ -22,9 +22,9 @@ const SevenHeros = () => {
   //   const arr = Array(3).fill("");
 
   return (
-    <div className=" lg:h-[737px] flex items-cente  my-5 lg:my-0">
+    <div className=" flex items-center  my-5 lg:my-0 pt-[50px] md:pt-[80px]">
       <div className="container mx-auto">
-        <h3 className=" h3 lg:my-8 my-5 text-center lg:text-left" data-aos="zoom-in">Our blog</h3>
+        <h3 className=" h3 mb-[40px] text-center lg:text-left" data-aos="zoom-in">Our blog</h3>
         <div className="md:grid lg:grid-cols-3 md:griid-cols-2  md:gap-5 lg:gap-10 flex flex-col  items-center">
           {sevenArr?.map((arr) => {
             return (
@@ -45,13 +45,13 @@ const SevenHeros = () => {
                     $0-100K in 14 months
                   </h3>
 
-                  <p className=" text-gray-600 h-[56px] w-[100%]  ">
+                  <p className=" text-gray-600 h-[56px] w-[100%]">
                     See how pivoting to Webflow changed one person’s sales
                     strategy and allowed him to attract
                   </p>
 
                  <Link to={`/template/detail?detailId=${arr?.id}`}>
-                 <div className=" flex  items-center gap-3 h-16 cursor-pointer">
+                 <div className=" flex  items-center gap-3 h-16 cursor-pointer pt-3">
                     <span>Read More</span>
                     <LiaLongArrowAltRightSolid size={25} />
                   </div>

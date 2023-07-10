@@ -7,7 +7,7 @@ import {
 
 const FifthHeros = () => {
   return (
-    <div className="bg-c_accent lg:h-[506px] md:py-3 lg:py-0 flex  items-center">
+    <div className="bg-c_accent py-[40px] md:py-[100px] flex  items-center">
       <div className="container mx-auto flex lg:flex-row flex-col  justify-between  ">
         <div className="lg:w-[537px] space-y-3 text-center lg:text-left " data-aos="zoom-in">
           <h2 className="lg:h2 h3">What our clients say about us</h2>

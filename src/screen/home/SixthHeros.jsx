@@ -4,18 +4,18 @@ import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
 const SixthHeros = () => {
   return (
-    <div className=" lg:h-[691px] flex items-center my-5 lg:my-0">
+    <div className=" flex items-center my-5 lg:my-0">
       <div className="container mx-auto">
         <div className=" flex" data-aos="zoom-in">
-          <div className=" relative w-[624px] h-[100%] hidden lg:block">
+          <div className=" relative h-[100%] hidden lg:block">
             <img src={Images?.Inquiry} alt=" injuirty" />
             <div className=" inquirty"></div>
             {/*  */}
             <div className="  absolute top-[20%] left-[10%] space-y-3">
-              <h1 className="w-[464px] h2 text-white">
+              <h1 className="h2 text-white">
                 Building stellar websites for early startups
               </h1>
-              <p className="para text-c_accent w-[464px]">
+              <p className="para text-c_accent">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua ut
                 enim.
@@ -25,9 +25,9 @@ const SixthHeros = () => {
             <div className=""></div>
           </div>
 
-          <div className=" lg:w-[624px]  bg-tint_blue flex flex-col items-center justify-center py-5 lg:py-0 px-3 lg:px-0">
-            <div className=" lg:w-[432px] space-y-3">
-              <h5 className=" h5 text-white lg:text-left  text-center">
+          <div className="bg-tint_blue flex flex-col items-center justify-center py-[50px]">
+            <div className=" md:w-[70%]">
+              <h5 className=" h5 text-white lg:text-left  text-center mb-3">
                 Send inquiry
               </h5>
               <p className="para text-gray-500 lg:text-left text-center">
@@ -35,10 +35,10 @@ const SixthHeros = () => {
                 eiusmod tempor incididunt ut labore.
               </p>
             </div>
-            <div className="">
+            <div className=" w-full">
               <form
                 action=""
-                className=" lg:w-[432px] w-[325px] h-[224px] mt-5 "
+                className=" mt-5 w-[80%] md:w-[70%] mx-auto"
               >
                 {/* <input type="text" className=" w-[100%] bg-transparent "/> */}
                 <div className="my-2 ">

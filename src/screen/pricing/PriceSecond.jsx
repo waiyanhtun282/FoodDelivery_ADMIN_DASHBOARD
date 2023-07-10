@@ -33,35 +33,36 @@ const PriceSecond = () => {
   //   const arr = Array(5).fill("");
 
   return (
-    <div className="lg:h-[562px] flex items-center  py-5 lg:py-0">
+    <div className=" flex items-center py-[70px] md:py-[100px]">
       <div className=" container mx-auto ">
-        <div className=" flex lg:flex-row flex-col lg:justify-between  lg:gap-36 gap-16">
-          <div className=" lg:space-y-3  space-y-2 text-center lg:text-left" data-aos="zoom-in">
+        <div className=" flex lg:flex-row flex-col lg:justify-between lg:gap-[30px]">
+          <div
+            className=" text-center lg:text-left mb-5"
+            data-aos="zoom-in"
+          >
             <h3 className=" h3 lg:w-[328px]">Frequently asked questions</h3>
             <p className=" text-c_blue">Contact us for more info</p>
           </div>
 
-          <div className=" lg:w-[844px] " data-aos="zoom-in">
+          <div className=" lg:w-[844px] ">
             {array?.map((arr) => {
               return (
-               
-                  <div
-                    className="  flex  justify-between items-center sm:text-left border-y-[1px] border-y-gray-100  h-16"
-                    key={arr?.id}
-                  >
-                    <div className=" flex gap-10">
-                      <h3 className="sm:text-left text-center text-c_blue sm:text-[24px] text-[18px]">
-                        {arr?.number}{" "}
-                      </h3>
+                <div
+                  className="  flex  justify-between items-center sm:text-left border-y-[1px] border-y-gray-100  h-16"
+                  key={arr?.id}
+                  data-aos="zoom-in"
+                >
+                  <div className=" flex gap-10">
+                    <h3 className="sm:text-left text-center text-c_blue sm:text-[24px] text-[18px]">
+                      {arr?.number}{" "}
+                    </h3>
 
-                      <h4 className=" sm:text-[24px] text-[13px] text-dark_blue">
-                        {arr?.name}
-                      </h4>
-                    </div>
-                    <AiOutlinePlus size={17} className=" cursor-pointer" />
+                    <h4 className=" sm:text-[24px] text-[13px] text-dark_blue">
+                      {arr?.name}
+                    </h4>
                   </div>
-                 
-              
+                  <AiOutlinePlus size={17} className=" cursor-pointer" />
+                </div>
               );
             })}
           </div>

@@ -34,7 +34,7 @@ const DetailTempOne = ({ template }) => {
             </div>
 
             {/* main page */}
-            <div className=" lg:h-[500px]" data-aos="zoom-in">
+            <div className=" lg:h-[500px] py-3" data-aos="zoom-in">
               <img
                 src={template?.template}
                 alt="tempalte 1"
@@ -43,7 +43,7 @@ const DetailTempOne = ({ template }) => {
             </div>
 
             {/* information */}
-            <div className=" lg:h-[100px]  grid lg:grid-cols-3 grid-cols-2  border-b-[0.8px] border-b-gray-300 gap-5 md:gap-0">
+            <div className=" lg:h-[100px]  grid lg:grid-cols-3 grid-cols-2  border-b-[0.8px] border-b-gray-300 gap-5 md:gap-0 pb-5">
               <div className=" md:w-[175px]  sm:space-y-3 space-y-2" data-aos="zoom-in">
                 <h3 className=" text-gray-600">Client</h3>
                 <h2 className=" md:text-[24px] text-[18px]">facebook.com</h2>

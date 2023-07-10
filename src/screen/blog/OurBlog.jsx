@@ -10,17 +10,17 @@ const OurBlog = ({blogArr}) => {
 
   return (
   
-    <div className=" lg:h-[1362px] flex items-center" key={blogArr.id}>
+    <div className="flex items-center lg:py-[50px]" key={blogArr.id}>
         <div className="container mx-auto">
-          <div className=" space-y-5">
+          <div className=" space-y-5 pb-10">
             <h1 className=" h1 text-center text-dark_blue" data-aos="zoom-in">Our Blog</h1>
 
             {/* blog Card */}
-            <div className=" md:grid lg:grid-cols-3 md:grid-cols-2 lg:gap-8 gap-5">
+            <div className=" md:grid lg:grid-cols-3 md:grid-cols-2 gap-10 lg:gap-8">
               {blogArr?.map((blog) => {
                 return (
                
-                    <div className=" lg:w-[370px] lg:h-[593px]  border-red-500 " key={blog?.id} data-aos="zoom-in">
+                    <div className=" lg:w-[370px] lg:h-[593px]  border-red-500 pt-7" key={blog?.id} data-aos="zoom-in">
                       <img
                         src={blog?.image}
                         alt={blog?.id}

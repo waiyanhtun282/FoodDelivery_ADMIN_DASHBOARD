@@ -44,20 +44,20 @@ const fourthArr = [
 const FourthHero = () => {
   // const arrayFour = Array(6).fill();
   return (
-    <div className=" bg-c_gray lg:h-[1191px] flex items-center py-10 lg:py-0">
+    <div className=" bg-c_gray flex items-center py-[60px] md:py-[128px]">
       <div className="container mx-auto">
-        <div className=" lg:space-y-10">
+        <div className="">
           <div
-            className="mx-auto text-center lg:w-[630px] lg:h-[192px] md:h-auto h-[130px]"
+            className="mx-auto text-center mb-[30px]"
             data-aos="zoom-in"
           >
             <div className="">Features</div>
             <h2 className=" lg:h2 h3 my-3">
-              Design that solves problems, one product at a time
+              Design that solves <br /> problems, one product at a time
             </h2>
           </div>
 
-          <div className="  lg:gap-8 grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+          <div className=" lg:gap-8 grid lg:grid-cols-3 md:grid-cols-2 gap-4 pt-[30px]">
             {fourthArr?.map((arr) => {
               return (
                 <div
