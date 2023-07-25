@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import "animate.css";
-import { Button } from "@material-tailwind/react";
+import { Router } from "./routes/routes";
 
 const App = () => {
   return (
     <div>
-      <Button>Hello</Button>
+      <Suspense>
+        <Router />
+      </Suspense>
     </div>
   );
 };
