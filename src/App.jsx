@@ -1,16 +1,12 @@
-import React, { useEffect } from "react";
-import Routers from "./routes/Routers";
+import React from "react";
+
 import "animate.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import { Button } from "@material-tailwind/react";
 
 const App = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div>
-      <Routers />
+      <Button>Hello</Button>
     </div>
   );
 };

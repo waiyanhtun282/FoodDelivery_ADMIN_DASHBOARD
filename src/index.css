@@ -34,37 +34,6 @@
     --distance-negative: -1.3rem;
 }
 
-/* for typography  */
-.h1{
-  @apply text-[40px] leading-[130%] md:text-[54px] font-semibold md:leading-[74px];
-}
 
-.h2{
-  @apply text-[28px] leading-[140%] md:text-[48px] font-semibold md:leading-[64px];
-}
-
-.h3{
-  @apply text-[24px] leading-[150%] md:text-[38px] font-semibold md:leading-[56px];
-}
-
-.h4{
-  @apply text-[20px] leading-[150%] md:text-[36px] font-psemibold md:leading-[56px];
-}
-
-.h5{
-  @apply text-[20px] leading-[150%] md:text-[32px] font-medium md:leading-[48px];
-}
-
-.h6{
-  @apply text-[19px] leading-[150%] md:text-[24px] font-medium md:leading-[36px];
-}
-
-.para{
-  @apply leading-[150%] font-normal md:leading-[28px];
-}
-.inquirty{
-  background-color: rgba(0, 0, 0, 0.5);
-  @apply absolute top-0 left-0 w-[100%] h-[100%]
-}
 
 
