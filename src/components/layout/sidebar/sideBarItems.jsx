@@ -1,18 +1,23 @@
 import {
-  BiSolidDashboard,
+  BiSolidBarChartAlt2,
   BiSolidArchiveIn,
   BiSolidUser,
   BiSolidCog,
   BiSolidNotepad,
   BiSolidGift,
   BiSolidShoppingBag,
+  BiSolidEnvelope,
+  BiSolidCollection,
+  BiSolidParty,
+  BiSolidCategoryAlt,
+  BiSolidBookContent,
 } from "react-icons/bi";
 
 export const sideBarItems = [
   {
     id: 1,
     name: "Dashboard",
-    icon: <BiSolidDashboard size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidBarChartAlt2 size={25} className=" drop-shadow-2xl" />,
     link: "/",
   },
   {
@@ -50,7 +55,7 @@ export const sideBarItems = [
   {
     id: 5,
     name: "Category",
-    icon: null,
+    icon: <BiSolidCategoryAlt size={25} className=" drop-shadow-2xl" />,
     link: "/category",
     subLinks: [
       {
@@ -90,7 +95,7 @@ export const sideBarItems = [
   {
     id: 5,
     name: "Giveaway",
-    icon: <BiSolidGift size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidParty size={25} className=" drop-shadow-2xl" />,
     link: "/customer",
     subLinks: [
       {
@@ -110,7 +115,27 @@ export const sideBarItems = [
   {
     id: 5,
     name: "Slide Show",
-    icon: <BiSolidGift size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidCollection size={25} className=" drop-shadow-2xl" />,
+    link: "/customer",
+    subLinks: [
+      {
+        id: 41,
+        name: "Lists",
+        icon: null,
+        link: "/product/list",
+      },
+      {
+        id: 42,
+        name: "Create",
+        icon: null,
+        link: "/product/list",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Blog",
+    icon: <BiSolidBookContent size={25} className=" drop-shadow-2xl" />,
     link: "/customer",
     subLinks: [
       {
@@ -150,7 +175,7 @@ export const sideBarItems = [
   {
     id: 3,
     name: "Request",
-    icon: <BiSolidUser size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidEnvelope size={25} className=" drop-shadow-2xl" />,
     link: "/customer",
   },
   {
