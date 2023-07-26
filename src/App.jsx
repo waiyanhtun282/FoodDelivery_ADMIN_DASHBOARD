@@ -6,7 +6,7 @@ import { Router } from "./routes/routes";
 const App = () => {
   return (
     <div>
-      <Suspense>
+      <Suspense >
         <Router />
       </Suspense>
     </div>
