@@ -1,6 +1,7 @@
 import React from "react";
 import { sideBarItems } from "./sideBarItems";
 import Icons from "../../../assets/icons/index";
+import {BiChevronRight} from "react-icons/bi";
 
 const SideBar = () => {
   return (
@@ -13,13 +14,14 @@ const SideBar = () => {
         </div>
       </div>
       <div className="">
-        <ul className=" w-[85%] mx-auto mt-5 flex flex-col gap-2">
+        <ul className=" w-[90%] mx-auto mt-5 flex flex-col gap-2">
           {sideBarItems.map((nav, id) => (
-            <li key={id}>
-              <div className=" flex items-center text-gray-700 gap-3 px-5 py-3 hover:bg-blue-100 hover:text-blue-700 rounded-md cursor-pointer transition-all duration-300">
+            <li key={id} className="group flex justify-between items-center px-5 hover:bg-blue-100 rounded-md cursor-pointer transition-all duration-300">
+              <div className=" flex items-center text-gray-700 gap-3 py-3 group-hover:text-blue-700">
                 {nav.icon}
-                <span>{nav.name}</span>
+                <span className=" select-none">{nav.name}</span>
               </div>
+              {nav?.subLinks?.length > 0 && <BiChevronRight size={20} className=" group-active:rotate-90"/>}
             </li>
           ))}
         </ul>
