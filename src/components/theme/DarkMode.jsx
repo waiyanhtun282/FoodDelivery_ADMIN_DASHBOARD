@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useDarkMode from "../../hooks/useDarkMode";
-import { Switch } from "@material-tailwind/react";
+import { Switch } from "@mantine/core";
+import { IconSun, IconMoonStars } from "@tabler/icons-react";
 
 const DarkMode = () => {
   const [colorTheme, setTheme] = useDarkMode();
@@ -13,11 +14,21 @@ const DarkMode = () => {
     setDarkSide(event.target.checked);
   };
   return (
-    <div className=" flex gap-3 items-center">
-      <Switch checked={darkSide} onChange={toggleDarkMode} id="switch" />
-      <label htmlFor="switch" className=" dark:text-white">
-        Dark Mode
-      </label>
+    <div className=" flex gap-3 items-center shadow-sm border-[1px] dark:border-none border-gray-500 rounded-full">
+      <Switch
+        size="md"
+        color={darkSide === true ? "cyan" : "dark"}
+        onLabel={<IconSun size="1rem" stroke={2.5} color="yellow" />}
+        offLabel={
+          <IconMoonStars
+            size="1rem"
+            stroke={2.5}
+            color={"gray"}
+          />
+        }
+        checked={darkSide}
+        onClick={toggleDarkMode}
+      />
     </div>
   );
 };

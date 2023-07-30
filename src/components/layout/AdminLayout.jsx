@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "./sidebar/SideBar";
 import { Outlet } from "react-router-dom";
-import Navbar from "./navbar/Navbar";
+import { ComplexNavbar } from "./navbar/Navbar";
 
 const AdminLayout = () => {
   return (
@@ -9,8 +9,8 @@ const AdminLayout = () => {
       <div className=" w-2/12 h-screen">
         <SideBar />
       </div>
-      <div className=" w-10/12 h-screen">
-        <Navbar />
+      <div className=" w-10/12 h-screen px-3 bg-white dark:bg-[#333] overflow-y-scroll">
+        <ComplexNavbar />
         <Outlet />
       </div>
     </div>
