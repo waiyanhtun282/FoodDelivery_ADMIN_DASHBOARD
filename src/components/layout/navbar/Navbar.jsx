@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Navbar,
   Typography,
   Button,
   Menu,
@@ -8,8 +7,6 @@ import {
   MenuList,
   MenuItem,
   Avatar,
-  IconButton,
-  Input,
 } from "@material-tailwind/react";
 import {
   UserCircleIcon,
@@ -18,10 +15,10 @@ import {
   InboxArrowDownIcon,
   LifebuoyIcon,
   PowerIcon,
-  Bars2Icon,
 } from "@heroicons/react/24/outline";
 
 import DarkMode from "../../theme/DarkMode";
+import { useNavContext } from "../../../hooks/useNavContext";
 
 // profile menu component
 const profileMenuItems = [
@@ -109,35 +106,24 @@ function ProfileMenu() {
 }
 
 export function ComplexNavbar() {
-  const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
-
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setIsNavOpen(false)
-    );
-  }, []);
+  const { isShow, setIsShow } = useNavContext();
 
   return (
-    <Navbar className="mx-auto p-2 lg:pl-6 mt-2 bg-gray-100 dark:bg-gray-900 dark:border-none">
-      <div className="relative mx-auto flex items-center text-blue-gray-900">
-        <div className="relative flex justify-between w-full gap-2 md:w-max">
-          {/* for input  */}
-        </div>
-        <div className=" ml-auto">
-          <DarkMode />
-          <IconButton
-            size="sm"
-            color="blue-gray"
-            variant="text"
-            onClick={toggleIsNavOpen}
-            className="mr-2 lg:hidden"
-          >
-            <Bars2Icon className="h-6 w-6" />
-          </IconButton>
-        </div>
-        <ProfileMenu />
+    <div className="relative w-full mx-auto flex items-center text-blue-gray-900 bg-white dark:bg-gray-900 md:rounded-md shadow p-2 md:p-3 md:mt-2">
+      <div className=" hidden md:block relative w-full lg:max-w-[300px] rounded-md border-gray-300 dark:border-gray-800 border-[1px] dark:text-gray-500">
+        <input
+          type="text"
+          className=" w-full h-[38px] pl-3 focus:outline-none bg-transparent text-sm"
+          placeholder="Search here ..."
+        />
+        <Button size="sm" className=" !absolute top-[3px] right-1 rounded-md">
+          search
+        </Button>
       </div>
-    </Navbar>
+      <div className=" ml-auto">
+        <DarkMode />
+      </div>
+      <ProfileMenu />
+    </div>
   );
 }

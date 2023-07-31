@@ -20,8 +20,8 @@ const SideBar = () => {
   };
 
   return (
-    <div className=" w-full h-screen overflow-y-scroll bg-gray-50 dark:bg-gray-900 border-gray-200">
-      <div className="logo pt-5 flex gap-3 items-center justify-center">
+    <div className=" w-full h-screen overflow-y-scroll bg-white dark:bg-gray-900 border-gray-200 shadow-md">
+      <div className="logo pt-5 flex gap-3 items-center lg:justify-center pl-4 lg:pl-0">
         <img src={Icons.Logo} alt="" className=" w-[70px] drop-shadow-xl" />
         <div className="">
           <h2 className=" uppercase font-pbold text-xl mt-3 dark:text-gray-200">
@@ -33,7 +33,7 @@ const SideBar = () => {
         </div>
       </div>
       <div className="">
-        <ul className=" w-[90%] mx-auto mt-5 flex flex-col gap-2 transition-all duration-300">
+        <ul className=" w-[90%] mx-auto mt-5 flex flex-col gap-1 transition-all duration-300">
           {sideBarItems.map((nav, id) => (
             <React.Fragment key={id}>
               <li
