@@ -14,7 +14,7 @@ const AdminLayout = () => {
 
       {/* for mobile  */}
       <div
-        className={` w-full lg:hidden h-screen fixed z-50 top-0 transition-all duration-300 bg-[#333c] ${
+        className={` w-full lg:hidden h-screen fixed z-50 top-0 transition-all duration-200 bg-[#333c] ${
           isShow ? " left-0" : "left-[-100%]"
         }`}
       >
