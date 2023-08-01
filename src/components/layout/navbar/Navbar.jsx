@@ -114,9 +114,9 @@ export function ComplexNavbar() {
     <div className="relative w-full mx-auto flex items-center text-blue-gray-900 bg-white dark:bg-gray-900 lg:rounded-md shadow p-2 md:p-3 lg:mt-2">
       <div
         className=" lg:hidden me-5 ms-2 w-[35px] h-[35px] md:w-[40px] md:h-[40px] rounded-full grid place-items-center"
-        onClick={() => setIsShow(!isShow)}
+        onClick={() => setIsShow((nav) => !nav)}
       >
-        <BiMenu className=" text-[25px] cursor-pointer dark:text-gray-500" />
+        <BiMenu className=" text-[25px] select-none dark:text-gray-500" />
       </div>
       <div className=" hidden md:block relative w-full md:max-w-[350px] rounded-md border-gray-300 dark:border-gray-800 border-[1px] dark:text-gray-500">
         <input

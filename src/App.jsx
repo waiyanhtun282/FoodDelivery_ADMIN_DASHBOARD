@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 
 import "animate.css";
 import { Router } from "./routes/routes";
@@ -6,9 +6,7 @@ import { Router } from "./routes/routes";
 const App = () => {
   return (
     <div>
-      <Suspense >
-        <Router />
-      </Suspense>
+      <Router />
     </div>
   );
 };
