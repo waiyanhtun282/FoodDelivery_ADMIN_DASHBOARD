@@ -56,5 +56,8 @@
 }
 
 
-
+/* for chart */
+.chart {
+  @apply dark:bg-gray-900 
+}
 
