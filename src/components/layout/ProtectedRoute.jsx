@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ children }) => {
-  const token = "1";
+  const token = "";
   if (!token) {
     return <Navigate to={"/login"} />;
   }
