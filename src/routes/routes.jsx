@@ -1,6 +1,8 @@
 import { useRoutes } from "react-router-dom";
 import { paths } from "./paths";
 import { lazy } from "react";
+import ProtectedRoute from "../components/layout/ProtectedRoute";
+import Login from "../pages/auth/Login";
 
 //
 
@@ -73,7 +75,11 @@ export const Router = () => {
   return useRoutes([
     {
       path: paths.dashboard,
-      element: <AdminLayout />,
+      element: (
+        <ProtectedRoute>
+          <AdminLayout />
+        </ProtectedRoute>
+      ),
       children: [
         {
           path: paths.dashboard,
@@ -152,6 +158,10 @@ export const Router = () => {
           element: <SettingPage />,
         },
       ],
+    },
+    {
+      path: paths.login,
+      element: <Login />,
     },
   ]);
 };
