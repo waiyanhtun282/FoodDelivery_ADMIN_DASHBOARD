@@ -1,17 +1,17 @@
 /* for fonts  */
 @font-face {
   font-family: poppins_normal;
-  src: url('./assets/fonts/poppins_regular.ttf');
+  src: url("./assets/fonts/poppins_regular.ttf");
 }
 
 @font-face {
   font-family: poppins_semiBold;
-  src: url('./assets/fonts/poppins_semibold.ttf');
+  src: url("./assets/fonts/poppins_semibold.ttf");
 }
 
 @font-face {
   font-family: poppins_bold;
-  src: url('./assets/fonts/poppins_bold.ttf');
+  src: url("./assets/fonts/poppins_bold.ttf");
 }
 
 /* for tailwind css  */
@@ -19,11 +19,16 @@
 @tailwind components;
 @tailwind utilities;
 
+INPUT:not(:autofill),
+SELECT:not(:autofill),
+TEXTAREA:not(:autofill) {
+  animation-name: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
 }
-
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -40,7 +45,7 @@
   background: #555;
 } */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -50,11 +55,7 @@
 }
 
 :root {
-    --speed: 0.5s;
-    --distance: 1.3rem;
-    --distance-negative: -1.3rem;
+  --speed: 0.5s;
+  --distance: 1.3rem;
+  --distance-negative: -1.3rem;
 }
-
-
-
-

@@ -1,9 +1,28 @@
 import React from "react";
 import Images from "../../assets/images/index";
 import Icons from "../../assets/icons/index";
-import { Button } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+
+const loginSchema = Yup.object().shape({
+  email: Yup.string().email("Invalid email").required("Email is require !"),
+  password: Yup.string()
+    .min(6, "Password at least must be 6 characters !")
+    .required("Password is required !"),
+});
 
 const Login = () => {
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: loginSchema,
+    onSubmit: async (values) => {
+      console.log(values);
+    },
+  });
   return (
     <div className=" grid grid-cols-1 lg:grid-cols-5 w-full h-screen">
       <div className=" hidden lg:grid place-items-center bg-blue-400 col-span-3">
@@ -26,29 +45,41 @@ const Login = () => {
           </div>
 
           <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+            <form className="space-y-6" onSubmit={formik.handleSubmit}>
               <div className="mt-2 w-[300px] md:w-[350px]">
-                <input
+                <Input
                   id="email"
                   name="email"
                   type="email"
-                  autoComplete="email"
-                  placeholder="Email"
-                  required
-                  className="block w-full rounded-r-md border-[1px] border-l-[5px] border-l-blue-600 border-gray-600 py-2 ps-2 text-gray-900 shadow-sm focus:outline-none placeholder:text-gray-400"
+                  autoComplete="off"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                  label="Email"
+                  className=""
                 />
+                {formik.touched.email && formik.errors.email ? (
+                  <span className=" text-red-500 text-sm">
+                    {formik.errors.email}
+                  </span>
+                ) : null}
               </div>
 
               <div className="mt-2 w-[300px] md:w-[350px]">
-                <input
+                <Input
                   id="password"
                   name="password"
                   type="password"
-                  autoComplete="current-password"
-                  placeholder="Password"
-                  required
-                  className="block w-full rounded-r-md border-[1px] border-l-[5px] border-l-blue-600 border-gray-600 py-2 ps-2 text-gray-900 shadow-sm focus:outline-none placeholder:text-gray-400"
+                  autoComplete="off"
+                  value={formik.values.password}
+                  onChange={formik.handleChange}
+                  label="Password"
+                  className=""
                 />
+                {formik.touched.password && formik.errors.password ? (
+                  <span className=" text-red-500 text-sm">
+                    {formik.errors.password}
+                  </span>
+                ) : null}
               </div>
 
               <div className=" grid place-items-center">
