@@ -21,6 +21,7 @@ import { BiMenu, BiChevronRight } from "react-icons/bi";
 
 import DarkMode from "../../theme/DarkMode";
 import { useNavContext } from "../../../hooks/useNavContext";
+import Cookies from "js-cookie";
 
 // profile menu component
 const profileMenuItems = [
@@ -51,6 +52,17 @@ function ProfileMenu() {
 
   const closeMenu = () => setIsMenuOpen(false);
 
+  const handleClick = (name) => {
+    closeMenu();
+    if (name == "Sign Out") {
+      Cookies.remove("user");
+      Cookies.remove("token");
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+    }
+  };
+
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
       <MenuHandler>
@@ -80,7 +92,7 @@ function ProfileMenu() {
           return (
             <MenuItem
               key={label}
-              onClick={closeMenu}
+              onClick={() => handleClick(label)}
               className={`flex items-center gap-2 rounded ${
                 isLastItem
                   ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
