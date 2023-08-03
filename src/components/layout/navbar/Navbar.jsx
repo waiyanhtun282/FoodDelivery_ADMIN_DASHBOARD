@@ -22,6 +22,7 @@ import { BiMenu, BiChevronRight } from "react-icons/bi";
 import DarkMode from "../../theme/DarkMode";
 import { useNavContext } from "../../../hooks/useNavContext";
 import Cookies from "js-cookie";
+import { Navigate, useNavigate } from "react-router-dom";
 
 // profile menu component
 const profileMenuItems = [
@@ -48,6 +49,7 @@ const profileMenuItems = [
 ];
 
 function ProfileMenu() {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const closeMenu = () => setIsMenuOpen(false);
@@ -58,7 +60,7 @@ function ProfileMenu() {
       Cookies.remove("user");
       Cookies.remove("token");
       setTimeout(() => {
-        window.location.reload();
+        navigate("/");
       }, 1000);
     }
   };
