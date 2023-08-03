@@ -80,7 +80,8 @@ const Login = () => {
                   value={formik.values.email}
                   onChange={formik.handleChange}
                   label="Email"
-                  className=" text-[15px]"
+                  size="lg"
+                  className=" text-[16px]"
                 />
                 {formik.touched.email && formik.errors.email ? (
                   <span className=" text-red-500 text-sm">
@@ -98,7 +99,8 @@ const Login = () => {
                   value={formik.values.password}
                   onChange={formik.handleChange}
                   label="Password"
-                  className=" text-[15px]"
+                  size="lg"
+                  className=" text-[16px]"
                 />
                 {formik.touched.password && formik.errors.password ? (
                   <span className=" text-red-500 text-sm">
