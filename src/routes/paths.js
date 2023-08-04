@@ -18,4 +18,5 @@ export const paths = {
   createExtraData: "/extra-data/create",
   request: "/request",
   setting: "/setting",
+  login: "/login",
 };

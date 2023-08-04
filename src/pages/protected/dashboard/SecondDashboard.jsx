@@ -45,8 +45,8 @@ const SecondDashboard = () => {
   const arr = Array(5).fill("");
 
   return (
-    <div className="  flex  gap-5">
-      <Card className=" p-5 w-4/12 bg-gray-50 dark:bg-gray-900">
+    <div className="  flex  gap-3 flex-col  mx-5   md:gap-5  lg:mx-0 lg:flex-row ">
+      <Card className=" p-5  bg-gray-50 dark:bg-gray-900 lg:w-4/12">
         <div className=" flex justify-between items-center">
           <Typography className=" text-tint_blue uppercase text-[18px] font-psemibold dark:text-gray-400">
             Recent Orders
@@ -156,7 +156,7 @@ const SecondDashboard = () => {
         </div>
       </Card>
       {/* bar */}
-      <Card className=" p-5 w-8/12 bg-gray-50 dark:bg-gray-900">
+      <Card className=" p-5  bg-gray-50 dark:bg-gray-900 lg:w-8/12">
         <div className=" flex justify-between items-center">
           <Typography className=" text-tint_blue uppercase text-[18px] font-psemibold dark:text-gray-400">
             Sales
@@ -167,7 +167,7 @@ const SecondDashboard = () => {
               <Checkbox
                 // defaultChecked
                 ripple={false}
-                className="h-6 w-6 rounded-full border-violet-500/50 bg-[violet] transition-all hover:scale-105 hover:before:opacity-0"
+                className="w-4 h-4  lg:h-6 lg:w-6 rounded-full border-violet-500/50 bg-[violet] transition-all hover:scale-105 hover:before:opacity-0"
               />
               <span className=" text-tint_blue dark:text-gray-200">Actual</span>
             </Typography>
@@ -175,7 +175,7 @@ const SecondDashboard = () => {
               <Checkbox
                 // defaultChecked
                 ripple={false}
-                className="h-6 w-6 rounded-full border-blue-500/50 bg-gray-50 transition-all hover:scale-105 hover:before:opacity-0"
+                className="w-4 h-4  lg:h-6 lg:w-6 rounded-full border-blue-500/50 bg-gray-50 transition-all hover:scale-105 hover:before:opacity-0"
               />
               <span className=" text-tint_blue dark:text-gray-200">
                 Projections
@@ -185,15 +185,16 @@ const SecondDashboard = () => {
         </div>
 
         {/* bar cahrt */}
-        <div className="w-full h-full dark:bg-gray-900">
+        <div className="lg:w-full  lg:h-full dark:bg-gray-900">
           <Chart
             chartType="ColumnChart"
             data={columnChartData}
             options={columnChartOptions}
             width="100%"
             height="100%"
-            className=" chart"
-            chartEvents={chartEvents} // Add the chartEvents prop here
+            className=" bg-white dark:bg-gray-900"
+            chartEvents={chartEvents}
+             // Add the chartEvents prop here
           />
         </div>
       </Card>

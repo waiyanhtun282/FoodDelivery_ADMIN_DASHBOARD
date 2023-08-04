@@ -19,7 +19,7 @@ import {
   IconButton,
   Tooltip,
 } from "@material-tailwind/react";
- 
+
 const TABS = [
   {
     label: "All",
@@ -34,14 +34,14 @@ const TABS = [
     value: "unmonitored",
   },
 ];
- 
+
 const TABLE_HEAD = ["Products", "Price", "Quantity", "Amount", "Sales"];
- 
+
 const TABLE_ROWS = [
   {
     img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-3.jpg",
     name: "John Michael",
-    
+
    quantity:908,
    amount:"$12344",
     price:"$123243",    
@@ -61,7 +61,7 @@ const TABLE_ROWS = [
   {
     img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-1.jpg",
     name: "Laurent Perrier",
-    
+
     job: "Executive",
    quantity:908,
    amount:"$12344",
@@ -82,7 +82,7 @@ const TABLE_ROWS = [
   {
     img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-5.jpg",
     name: "Richard Gran",
-    
+
    quantity:908,
    amount:"$12344",
     price:"$123243",    
@@ -90,23 +90,23 @@ const TABLE_ROWS = [
     date: "04/10/21",
   },
 ];
- 
+
 export function ThirdDashboard() {
   return (
-    <Card className="h-full w-full bg-gray-50 dark:bg-gray-900">
+    <Card className=" bg-gray-50 dark:bg-gray-900   mx-5 lg:mx-0 lg:h-full lg:w-full">
       <CardHeader floated={false} shadow={false} className="rounded-none dark:bg-gray-900 bg-gray-50">
         <div className=" flex items-center justify-between gap-8">
-         
+
             <Typography variant="h5"  className="text-[blue-gray] dark:text-gray-400">
               Top Selling
             </Typography>
-          
-          
+
+
           <div className="flex shrink-0 flex-col gap-2 sm:flex-row dark:text-gray-200">
             <HiOutlineDotsVertical size={20}/>
           </div>
         </div>
-        
+
       </CardHeader>
       <CardBody className="overflow-scroll px-0">
         <table className="mt-4 w-full min-w-max table-auto text-left">
@@ -135,7 +135,7 @@ export function ThirdDashboard() {
             {TABLE_ROWS.map(({ img, name, quantity,price, amount, online, date }, index) => {
               const isLast = index === TABLE_ROWS.length - 1;
               const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50 dark:border-blue-gray-700";
- 
+
               return (
                 <tr key={name}>
                   <td className={classes}>
@@ -160,7 +160,7 @@ export function ThirdDashboard() {
                       <Typography variant="small" color="blue-gray" className="font-normal dark:text-gray-400">
                         {price}
                       </Typography>
-                    
+
                     </div>
                   </td>
                   <td className={classes}>

@@ -14,10 +14,10 @@ const DarkMode = () => {
     setDarkSide(event.target.checked);
   };
   return (
-    <div className=" flex gap-3 items-center shadow-sm border-[1px] dark:border-none border-gray-500 rounded-full">
+    <div className=" flex gap-3 items-center shadow-sm border-[1px] dark:border-none border-gray-400 rounded-full">
       <Switch
         size="md"
-        color={darkSide === true ? "cyan" : "dark"}
+        color={darkSide === true ? "blue" : "dark"}
         onLabel={<IconSun size="1rem" stroke={2.5} color="yellow" />}
         offLabel={
           <IconMoonStars

@@ -6,8 +6,8 @@ import {BiGroup} from "react-icons/bi";
 import {CiShop} from "react-icons/ci";
 const FirstDashboard = () => {
   return (
-    <div className=" flex  gap-5">
-        <Card  className=' w-4/12 bg-gray-50  py-3 px-5 dark:bg-gray-900'>
+    <div className=" flex  gap-3 flex-col mx-5 md:gap-5 md:flex-row lg:mx-0">
+        <Card  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900 lg:w-4/12'>
           <div className=" flex items-center justify-between">
           <Typography className=" text-tint_blue uppercase dark:text-gray-200">
             Revenues
@@ -17,7 +17,7 @@ const FirstDashboard = () => {
             </Typography>
           </div>
           <div className="  mt-3">
-            <Typography variant="h4" className=" text-dark_blue dark:text-gray-400">
+            <Typography  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
               $ 3,402321
             </Typography>
 
@@ -29,7 +29,7 @@ const FirstDashboard = () => {
           </div>
        </Card>
 
-       <Card  className=' w-4/12 bg-gray-50  py-3 px-5 dark:bg-gray-900' >
+       <Card  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900  lg:w-4/12' >
        <div className=" flex items-center justify-between">
           <Typography className=" text-tint_blue uppercase dark:text-gray-200">
             Cutomers
@@ -39,7 +39,7 @@ const FirstDashboard = () => {
             </Typography>
           </div>
           <div className="  mt-3">
-            <Typography variant="h4" className=" text-dark_blue dark:text-gray-400">
+            <Typography  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
               34
             </Typography>
 
@@ -50,7 +50,7 @@ const FirstDashboard = () => {
             </Typography>
           </div>
        </Card>
-       <Card  className=' w-4/12 bg-gray-50  py-3 px-5 dark:bg-gray-900'>
+       <Card  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900 lg:w-4/12'>
        <div className=" flex items-center justify-between">
           <Typography className=" text-tint_blue uppercase dark:text-gray-200">
             Shop  Views
@@ -60,7 +60,7 @@ const FirstDashboard = () => {
             </Typography>
           </div>
           <div className="  mt-3">
-            <Typography variant="h4" className=" text-dark_blue dark:text-gray-400">
+            <Typography  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
                683
             </Typography>
 

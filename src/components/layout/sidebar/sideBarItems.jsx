@@ -18,25 +18,25 @@ export const sideBarItems = [
   {
     id: 1,
     name: "Dashboard",
-    icon: <BiSolidBarChartAlt2 size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidBarChartAlt2 className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.dashboard,
   },
   {
     id: 2,
     name: "Order",
-    icon: <BiSolidArchiveIn size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidArchiveIn className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.order,
   },
   {
     id: 3,
     name: "Customer",
-    icon: <BiSolidUser size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidUser className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.customer,
   },
   {
     id: 4,
     name: "Product",
-    icon: <BiSolidShoppingBag size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidShoppingBag className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.product,
     subLinks: [
       {
@@ -56,7 +56,7 @@ export const sideBarItems = [
   {
     id: 5,
     name: "Category",
-    icon: <BiSolidCategoryAlt size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidCategoryAlt className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.category,
     subLinks: [
       {
@@ -76,7 +76,7 @@ export const sideBarItems = [
   {
     id: 6,
     name: "Promotion",
-    icon: <BiSolidGift size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidGift className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.promotion,
     subLinks: [
       {
@@ -96,7 +96,7 @@ export const sideBarItems = [
   {
     id: 7,
     name: "Giveaway",
-    icon: <BiSolidParty size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidParty className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.giveaway,
     subLinks: [
       {
@@ -116,7 +116,7 @@ export const sideBarItems = [
   {
     id: 8,
     name: "Slide Show",
-    icon: <BiSolidCollection size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidCollection className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.slidShow,
     subLinks: [
       {
@@ -136,7 +136,7 @@ export const sideBarItems = [
   {
     id: 9,
     name: "Blog",
-    icon: <BiSolidBookContent size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidBookContent className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.blog,
     subLinks: [
       {
@@ -156,7 +156,7 @@ export const sideBarItems = [
   {
     id: 10,
     name: "Extra Data",
-    icon: <BiSolidNotepad size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidNotepad className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.extraData,
     subLinks: [
       {
@@ -176,13 +176,13 @@ export const sideBarItems = [
   {
     id: 13,
     name: "Request",
-    icon: <BiSolidEnvelope size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidEnvelope className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.request,
   },
   {
     id: 14,
     name: "Setting",
-    icon: <BiSolidCog size={25} className=" drop-shadow-2xl" />,
+    icon: <BiSolidCog className="text-[20px] 2xl:text-[25px] drop-shadow-2xl" />,
     link: paths.setting,
   },
 ];
