@@ -7,70 +7,70 @@ import {CiShop} from "react-icons/ci";
 const FirstDashboard = () => {
   return (
     <div className=" flex  gap-3 flex-col mx-5 md:gap-5 md:flex-row lg:mx-0">
-        <Card  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900 lg:w-4/12'>
+        <div  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900 lg:w-4/12 shadow-md  rounded-md'> 
           <div className=" flex items-center justify-between">
-          <Typography className=" text-tint_blue uppercase dark:text-gray-200">
+          <div className=" text-tint_blue uppercase dark:text-gray-200">
             Revenues
-            </Typography>
-            <Typography className=" p-1 rounded-md bg-[#1ddb1d] dark:bg-blue-700">
+            </div>
+            <div className=" p-1 rounded-md bg-[#1ddb1d] dark:bg-blue-700">
             <LiaCommentDollarSolid size={25} color='white'/>
-            </Typography>
+            </div>
           </div>
           <div className="  mt-3">
-            <Typography  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
+            <div  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
               $ 3,402321
-            </Typography>
+            </div>
 
-            <Typography variant="small" className="flex gap-2 mt-1">
-              <Typography className=' text-[green] dark:text-indigo-600' variant="small">+6.50%
-              </Typography>
+            <div  className="flex gap-2 mt-1 dark:text-gray-500">
+              <div className=' text-[green] dark:text-indigo-600' >+6.50%
+              </div>
               since Last month
-            </Typography>
+            </div>
           </div>
-       </Card>
+       </div>
 
-       <Card  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900  lg:w-4/12' >
+       <div  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900  lg:w-4/12 shadow-md  rounded-md' >
        <div className=" flex items-center justify-between">
-          <Typography className=" text-tint_blue uppercase dark:text-gray-200">
+          <div className=" text-tint_blue uppercase dark:text-gray-200">
             Cutomers
-            </Typography>
-            <Typography className=" p-1 rounded-md bg-[hotpink] dark:bg-blue-700">
+            </div>
+            <div className=" p-1 rounded-md bg-[hotpink] dark:bg-blue-700">
             <BiGroup size={25} color='white'/>
-            </Typography>
+            </div>
           </div>
           <div className="  mt-3">
-            <Typography  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
+            <div  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
               34
-            </Typography>
+            </div>
 
-            <Typography variant="small" className="flex gap-2 mt-1">
-              <Typography className=' text-[hotpink] dark:text-blue-700' variant="small">-2.80%
-              </Typography>
+            <div  className="flex gap-2 mt-1 dark:text-gray-500">
+              <div className=' text-[hotpink] dark:text-blue-700' >-2.80%
+              </div>
               since Last month
-            </Typography>
+            </div>
           </div>
-       </Card>
-       <Card  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900 lg:w-4/12'>
+       </div>
+       <div  className='  bg-gray-50  py-3 px-5 dark:bg-gray-900 lg:w-4/12 shadow-md  rounded-md'>
        <div className=" flex items-center justify-between">
-          <Typography className=" text-tint_blue uppercase dark:text-gray-200">
+          <div className=" text-tint_blue uppercase dark:text-gray-200">
             Shop  Views
-            </Typography>
-            <Typography className=" p-1 rounded-md bg-[#1ddb1d] dark:bg-blue-700">
+            </div>
+            <div className=" p-1 rounded-md bg-[#1ddb1d] dark:bg-blue-700">
             <CiShop size={25} color='white'/>
-            </Typography>
+            </div>
           </div>
           <div className="  mt-3">
-            <Typography  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
+            <div  className="text-2xl font-psemibold text-dark_blue dark:text-gray-400">
                683
-            </Typography>
+            </div>
 
-            <Typography variant="small" className="flex gap-2 mt-1">
-              <Typography className=' text-[green] dark:text-blue-700' variant="small">+1.70%
-              </Typography>
+            <div className="flex gap-2 mt-1 dark:text-gray-500">
+              <div className=' text-[green] dark:text-blue-700'>+1.70%
+              </div>
               since Last month
-            </Typography>
+            </div>
           </div>
-       </Card>
+       </div>
        </div>
   )
 }

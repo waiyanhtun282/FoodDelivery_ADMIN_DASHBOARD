@@ -42,18 +42,18 @@ const SecondDashboard = () => {
       },
     },
   ];
-  const arr = Array(5).fill("");
+  const arr = Array(10).fill("");
 
   return (
-    <div className="  flex  gap-3 flex-col  mx-5   md:gap-5  lg:mx-0 lg:flex-row ">
-      <Card className=" p-5  bg-gray-50 dark:bg-gray-900 lg:w-4/12">
+    <div className="  flex  gap-3 flex-col  mx-5  md:gap-5  lg:mx-0 lg:flex-row shadow-md rounded-md">
+      <div className=" p-5  bg-gray-50 dark:bg-gray-900 lg:w-4/12 overflow-y-scroll lg:h-[500px]">
         <div className=" flex justify-between items-center">
-          <Typography className=" text-tint_blue uppercase text-[18px] font-psemibold dark:text-gray-400">
+          <div className=" text-tint_blue uppercase text-[18px] font-psemibold dark:text-gray-400">
             Recent Orders
-          </Typography>
-          <Typography className="dark:text-gray-200 ">
+          </div>
+          <div className="dark:text-gray-200 ">
             <HiOutlineDotsVertical size={18} />
-          </Typography>
+          </div>
         </div>
 
         <div className="">
@@ -61,74 +61,60 @@ const SecondDashboard = () => {
             <thead>
               <tr>
                 <th className="border-b border-blue-gray-100  py-3   w-7/12  ">
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="font-normal leading-none opacity-70  dark:text-gray-200"
-                  >
+                  <div className="font-normal leading-none opacity-70  dark:text-gray-200 ">
                     From
-                  </Typography>
+                  </div>
                 </th>
                 <th className="border-b border-blue-gray-100  py-3    w-2/12 ">
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="font-normal leading-none opacity-70 dark:text-gray-200"
-                  >
+                  <div className="font-normal leading-none opacity-70 dark:text-gray-200">
                     price
-                  </Typography>
+                  </div>
                 </th>
                 <th className="border-b border-blue-gray-100  py-3   w-3/12  text-end ">
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="font-normal leading-none opacity-70  dark:text-gray-200"
-                  >
+                  <div className="font-normal leading-none opacity-70  dark:text-gray-200">
                     Status
-                  </Typography>
+                  </div>
                 </th>
               </tr>
             </thead>
             <tbody>
-              {arr?.map((index, a) => (
+              {arr?.map((index,a) => (
                 <tr
-                  key={index}
+                  key={a}
                   className=" border-y py-4 dark:border-y-blue-gray-600"
                 >
-                  <td key={a}>
+                  <td>
                     <div className="flex items-center gap-1">
-                      <Avatar src={Image1} alt=" image" size="sm" />
+                      <img src={Image1} alt=" image"  className="" />
                       <div className="flex flex-col">
-                        <Typography
+                        <div
                           // variant="medium"
-                          color="blue-gray"
+
                           className=" font-psemibold dark:text-gray-200"
                         >
                           Maxmia Smalls
-                        </Typography>
-                        <Typography
-                          variant="small"
-                          color="blue-gray"
-                          className="font-normal opacity-70 dark:text-gray-400"
+                        </div>
+                        <div
+                         
+                          className="font-normal opacity-70 dark:text-gray-400 text-[14px]"
                         >
                           4minutes ago
-                        </Typography>
+                        </div>
                       </div>
                     </div>
                   </td>
 
                   <td>
-                    <Typography
-                      variant="small"
-                      color="blue-gray"
+                    <div
+                    
                       className=" font-pbold text-tint_blue dark:text-gray-200"
                     >
                       $124323
-                    </Typography>
+                    </div>
                   </td>
                   <td className="">
-                    <div className=" text-center bg-blue-100 h-6 rounded-lg ">
-                      <Typography size="small">inprogress</Typography>
+                    <div className=" text-center bg-blue-100  h-6 rounded-lg ">
+                      <div  className=" text-[15px]">inprogress</div>
                     </div>
                   </td>
                 </tr>
@@ -138,13 +124,12 @@ const SecondDashboard = () => {
         </div>
 
         <div className=" flex items-center justify-between border-t border-blue-gray-50 py-3 dark:border-blue-gray-700">
-          <Typography
-            variant="small"
-            color="blue-gray"
+          <div
+            
             className="font-normal dark:text-gray-200"
           >
             Page 1 of 10
-          </Typography>
+          </div>
           <div className="flex gap-2">
             <Button variant="outlined" color="blue-gray" size="sm">
               Previous
@@ -154,24 +139,24 @@ const SecondDashboard = () => {
             </Button>
           </div>
         </div>
-      </Card>
+      </div>
       {/* bar */}
-      <Card className=" p-5  bg-gray-50 dark:bg-gray-900 lg:w-8/12">
+      <div className=" p-5  bg-gray-50 dark:bg-gray-900 lg:w-8/12 shadow-md rounded-md lg:h-[500px] overflow-y-scoll">
         <div className=" flex justify-between items-center">
-          <Typography className=" text-tint_blue uppercase text-[18px] font-psemibold dark:text-gray-400">
+          <div className=" text-tint_blue uppercase text-[18px] font-psemibold dark:text-gray-400">
             Sales
-          </Typography>
+          </div>
 
           <div className=" flex gap-3">
-            <Typography className="flex items-center ">
+            <div className="flex items-center ">
               <Checkbox
                 // defaultChecked
                 ripple={false}
                 className="w-4 h-4  lg:h-6 lg:w-6 rounded-full border-violet-500/50 bg-[violet] transition-all hover:scale-105 hover:before:opacity-0"
               />
               <span className=" text-tint_blue dark:text-gray-200">Actual</span>
-            </Typography>
-            <Typography className="flex items-center ">
+            </div>
+            <div className="flex items-center ">
               <Checkbox
                 // defaultChecked
                 ripple={false}
@@ -180,12 +165,12 @@ const SecondDashboard = () => {
               <span className=" text-tint_blue dark:text-gray-200">
                 Projections
               </span>
-            </Typography>
+            </div>
           </div>
         </div>
 
         {/* bar cahrt */}
-        <div className="lg:w-full  lg:h-full dark:bg-gray-900">
+        <div className="w-[100%] h-[100%] lg:h-[90%]">
           <Chart
             chartType="ColumnChart"
             data={columnChartData}
@@ -194,10 +179,10 @@ const SecondDashboard = () => {
             height="100%"
             className=" bg-white dark:bg-gray-900"
             chartEvents={chartEvents}
-             // Add the chartEvents prop here
+            // Add the chartEvents prop here
           />
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

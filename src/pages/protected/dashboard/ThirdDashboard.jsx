@@ -142,7 +142,7 @@ export function ThirdDashboard() {
                     <div className="flex items-center gap-3">
                       <Avatar src={img} alt={name} size="sm" />
                       <div className="flex flex-col">
-                        <Typography variant="large" color="blue-gray" className="font-psemibold dark:text-gray-400">
+                        <Typography variant="h6" color="blue-gray" className="font-psemibold dark:text-gray-400">
                           {name}
                         </Typography>
                         {/* <Typography
