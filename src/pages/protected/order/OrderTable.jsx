@@ -8,9 +8,9 @@ const OrderTable = () => {
 
   return (
     <table className="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400   border-separate  border-spacing-y-3">
-          <thead className="text-xs text-gray-700  bg-[aliceblue] dark:bg-gray-700 dark:text-gray-400  border">
+          <thead className="text-xs text-gray-700  bg-[aliceblue]  dark:text-gray-400  dark:bg-gray-900 ">
         
-            <tr className=" shadow-sm">
+            <tr className=" shadow-sm dark:shadow-md">
             <th scope="col" className="px-5 ">
              <div className=" flex gap-1 ">
              id
@@ -48,19 +48,19 @@ const OrderTable = () => {
          {
           arr?.map((index,a) =>{
            return(
-            <tr  className=" bg-[aliceblue] shadow-sm" key={a}>
-            <td className=" px-5 py-5 text-black">#322</td>
+            <tr  className=" bg-[aliceblue] shadow-sm dark:bg-gray-900 dark:shadow-md" key={a}>
+            <td className=" px-5 py-5 text-black dark:text-gray-50">#322</td>
             <td>
               <div className=" flex items-center gap-3">
                 <img src={Image1} alt=" image1" />
-                <p className=" text-black">
+                <p className=" text-black dark:text-gray-100">
                   Brokery
                 </p>
               </div>
             </td>
-            <td className=' text-black'>Cash</td>
+            <td className=' text-black dark:text-gray-100'>Cash</td>
             <td>
-              <div className=" flex items-center  gap-3 text-black">
+              <div className=" flex items-center  gap-3 text-black dark:text-gray-200">
               <BiTime />
               13min
               </div>
@@ -76,10 +76,10 @@ const OrderTable = () => {
                 </div>
               </td>
 
-              <td className=' text-[#000]'>$12e33</td>
+              <td className=' text-[#000] dark:text-gray-300'>$12e33</td>
 
               <td>
-                <BiDotsVerticalRounded  className=" text-center text-black cursor-pointer mx-auto" size={18}/>
+                <BiDotsVerticalRounded  className=" text-center text-black cursor-pointer mx-auto dark:text-gray-50" size={18}/>
               </td>
            </tr>
            )

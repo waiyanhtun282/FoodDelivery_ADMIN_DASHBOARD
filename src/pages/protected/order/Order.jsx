@@ -5,7 +5,7 @@ import OrderTable from "./OrderTable";
 
 const Order = () => {
   return (
-    <div className=" dark:text-gray-200 my-5 bg-[#fbeff1] p-5 rounded-md">
+    <div className=" dark:text-gray-200 my-5 bg-[#fbeff1] p-5 rounded-md dark:bg-gray-800/10">
       <h1 className=" text-2xl  font-psemibold">Order History</h1>
       {/* order header and date */}
       <div className=" my-5 flex  items-center  justify-between flex-row">
@@ -19,7 +19,7 @@ const Order = () => {
         </div>
 
         <div className=" flex items-center  flex-col md:flex-row lg:gap-5 gap-2">
-          <div className=" bg-[#fcfafa] px-2 py-3 rounded-md border flex items-center gap-2">
+          <div className=" bg-[#fcfafa] px-2 py-3 rounded-md border flex items-center gap-2 dark:bg-gray-800">
             <BsCalendar3 size={18} />
             <input
               type="date"
@@ -29,7 +29,7 @@ const Order = () => {
             />
           </div>
           <span className="hidden md:block">To</span>
-          <div className=" bg-[#fcfafa]  px-2 py-3  rounded-md flex items-center gap-2">
+          <div className=" bg-[#fcfafa]  px-2 py-3  rounded-md flex items-center gap-2 dark:bg-gray-800">
             <BsCalendar3 size={18} />
             <input
               type="date"
