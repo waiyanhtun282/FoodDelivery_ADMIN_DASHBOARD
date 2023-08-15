@@ -9,7 +9,7 @@ const CreateProduct = () => {
     <div className=" ">
       <div className=" my-5 flex items-center  gap-3  mx-5 lg:mx-0">
         <HiOutlineArrowNarrowLeft size={20} className=" cursor-pointer dark:text-blue-300" />
-        <h1 className=" text-xl  text-tint_blue dark:text-gray-300">Categories</h1>
+        <h1 className=" text-xl  text-tint_blue dark:text-gray-300">Products</h1>
       </div>
 
       <div className=" mx-5  my-8">
