@@ -15,11 +15,11 @@ const CreateSlideShow = () => {
           SlideShow
         </h1>
       </div>
-      <div className="bg-white shadow-sm rounded-md border  overflow-y-scroll  border-gray-300  dark:bg-gray-900/20 dark:border-gray-800 dark:shadow-md  p-5 mx-5 ">
+      <div className="bg-white shadow-sm rounded-md border  overflow-y-scroll  border-gray-300  dark:bg-gray-900/20 dark:border-gray-800 dark:shadow-md  p-5   max-w-3xl mx-auto">
         <h3 className=" font-pnormal dark:text-gray-300 mb-5">
           CreateSlideDetail
         </h3>
-        <form action="" className=" grid md:grid-cols-2 md:gap-3  gap-5">
+        <form action="" className=" grid md:grid-cols-1 md:gap-3  gap-5">
          
             <CommonInput
               type="text"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Select, Option } from "@material-tailwind/react";
+import { Select, Option, Textarea } from "@material-tailwind/react";
 import CommonInput from "../../../../components/Input/CommonInput";
 
 const FormCreate = () => {
@@ -16,10 +16,7 @@ const FormCreate = () => {
           </div>
 
           <div className="w-[100%] mt-3">
-            <textarea
-              placeholder="Long desc"
-              className=" p-3 w-[100%] placeholder-gray-800 outline-none border  border-gray-400 rounded-md dark:bg-transparent dark:placeholder-gray-300 dark:border-gray-800 dark:text-gray-300"
-            ></textarea>
+          <Textarea label="LongDesc" />
           </div>
         </form>
       </div>

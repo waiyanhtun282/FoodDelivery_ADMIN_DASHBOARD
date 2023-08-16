@@ -15,7 +15,7 @@ const CreateGiveaway = () => {
         </h1>
       </div>
 
-      <div className="bg-white shadow-sm rounded-md border  overflow-y-scroll  border-gray-300  dark:bg-gray-900/20 dark:border-gray-800 dark:shadow-md  p-5 mx-5 md:mx-auto  md:max-w-3xl">
+      <div className="bg-white shadow-sm rounded-md border  overflow-y-scroll  border-gray-300  dark:bg-gray-900/20 dark:border-gray-800 dark:shadow-md  p-5 mx-5 md:mx-auto  md:max-w-2xl">
         <h3 className=" font-pnormal dark:text-gray-300 mb-5">GitawayDetail</h3>
 
         <form action="" className=" space-y-5">
