@@ -16,7 +16,7 @@ const FormCreate = () => {
           </div>
 
           <div className="w-[100%] mt-3">
-          <Textarea label="LongDesc" />
+          <Textarea label="LongDesc" className=" dark:text-white" />
           </div>
         </form>
       </div>

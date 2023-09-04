@@ -5,7 +5,7 @@ import OrderTable from "./OrderTable";
 
 const Order = () => {
   return (
-    <div className=" dark:text-gray-200 my-5 bg-[#fbeff1] p-5 rounded-md dark:bg-gray-800/10">
+    <div className=" dark:text-gray-200 my-5 bg-gray-50 p-5 rounded-md dark:bg-gray-800/10">
       <h1 className=" text-2xl  font-psemibold">Order History</h1>
       {/* order header and date */}
       <div className=" my-5 flex  items-center  justify-between flex-row">
