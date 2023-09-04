@@ -16,7 +16,6 @@ const SideBar = () => {
     setActiveNav(nav.id);
     nav?.subLinks ? null : navigate(nav.link);
     nav?.subLinks ? null : setIsShow((show) => !show);
-    
   };
 
   const handleNestedRoute = (link) => {
