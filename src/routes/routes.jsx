@@ -76,9 +76,9 @@ export const Router = () => {
     {
       path: paths.dashboard,
       element: (
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <AdminLayout />
-        </ProtectedRoute>
+        // </ProtectedRoute>
       ),
       children: [
         {
